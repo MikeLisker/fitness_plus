@@ -1,169 +1,942 @@
 body, html {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
 }
 
 .container {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	background: white;
+    width: 100%;
 }
 
-.box {
-	width: 1490px;
-	height: 992px;
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.banner {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-color: #EBFD01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.yellow-background {
-	background: #EBFD01;
+.banner-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.overlay {
-	width: 1346px;
-	height: 550px;
-	position: absolute;
-	left: 29px;
-	top: 237px;
+.banner-content {
+    z-index: 1;
+    text-align: center;
+    color: white;
 }
 
-.overlay-content {
-	padding: 50px 120px;
-	position: absolute;
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 50px;
+.banner-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.title {
-	text-align: center;
-	color: white;
-	font-size: 36px;
-	font-family: Inter, sans-serif;
-	font-weight: 700;
-	line-height: 44px;
-	word-wrap: break-word;
+.banner-content h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #EBFD01;
+    color: #1F1F1F;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.plans {
+    padding: 50px 120px;
+    background-color: white;
+    text-align: center;
+}
+
+.plans-header h1 {
+    font-size: 60px;
+    color: #212121;
+}
+
+.plans-header p {
+    font-size: 18px;
+    color: #616161;
+    margin: 20px 0;
+}
+
+.plans-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #737373;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-button.active {
+    background-color: #EBFD01;
+    color: #1F1F1F;
+}
+
+.plan-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan-card {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #E0E0E0;
+    border-radius: 24px;
+    text-align: left;
+}
+
+.plan-card.recommended {
+    border-color: #EBFD01;
+}
+
+.plan-card h3 {
+    font-size: 28px;
+    color: #18191E;
+}
+
+.plan-card .price {
+    font-size: 44px;
+    color: #18191E;
+}
+
+.plan-card .price span {
+    font-size: 16px;
+    color: #737373;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.plan-features li {
+    font-size: 14px;
+    color: #18191E;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.plan-features li:before {
+    content: '✔';
+    margin-right: 10px;
+    color: #0B0B0B;
+}
+
+.locations {
+    padding: 50px 120px;
+    background-color: white;
+    text-align: center;
+}
+
+.location-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.location-card {
+    width: 380px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #ffffff;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.location-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.location-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.location-card p {
+    font-size: 1em;
+    color: #555555;
+}
+
+/* Texto principal */
+.text-primary {
+    color: #212121;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Texto secundario */
+.text-secondary {
+    color: #616161;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Texto terciario */
+.text-tertiary {
+    color: #737373;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Texto principal grande */
+.text-primary-large {
+    color: #212121;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+/* Texto principal mediano */
+.text-primary-medium {
+    @extend .text-primary;
+    font-size: 44px;
+    line-height: 50px;
+}
+
+/* Texto primario pequeño */
+.text-primary-small {
+    @extend .text-primary;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+/* Texto secundario grande */
+.text-secondary-large {
+    @extend .text-secondary;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* Texto secundario pequeño */
+.text-secondary-small {
+    @extend .text-secondary;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Texto terciario grande */
+.text-tertiary-large {
+    @extend .text-tertiary;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* Texto terciario pequeño */
+.text-tertiary-small {
+    @extend .text-tertiary;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* Texto en blanco */
+.text-white {
+    color: white;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+    line-height: 24px;
+}
+
+/* Texto en negro */
+.text-black {
+    color: #1F1F1F;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+    line-height: 24px;
+}
+
+/* Texto para precios */
+.price-text {
+    color: #18191E;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 50px;
+    word-wrap: break-word;
+}
+
+/* Texto en blanco con opacidad */
+.text-white-opacity {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25.60px;
+    word-wrap: break-word;
+}
+
+/* Otros estilos específicos */
+.bold-large {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.highlight {
+    font-size: 60px;
+    line-height: 70px;
 }
 
 .subtitle {
-	width: 945px;
-	text-align: center;
-	color: white;
-	font-size: 60px;
-	font-family: Inter, sans-serif;
-	font-weight: 700;
-	line-height: 70px;
-	word-wrap: break-word;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
 }
 
-.button {
-	width: 330px;
-	height: 45px;
-	padding: 10px 74px;
-	border-radius: 10px;
-	overflow: hidden;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+
+/* Estilo general de los títulos y textos */
+.title {
+    color: #212121;
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 70px;
+    word-wrap: break-word;
 }
 
-.yellow-button {
-	background: #EBFD01;
+.subtitle {
+    color: #616161;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
 }
 
-.button-text {
-	text-align: center;
-	color: #1F1F1F;
-	font-size: 18px;
-	font-family: Inter, sans-serif;
-	font-weight: 600;
-	line-height: 24px;
-	word-wrap: break-word;
+/* Estilo de las tarjetas de las sedes */
+.sede-title {
+    color: #18191E;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 36px;
+    word-wrap: break-word;
 }
 
-.content {
-	height: 988px;
-	padding: 50px 120px;
-	position: absolute;
-	top: 814px;
-	background: white;
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 32px;
+.sede-subtitle {
+    color: #18191E;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
 }
 
-.content-inner {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 24px;
+.sede-address {
+    color: #737373;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 16px;
+    word-wrap: break-word;
 }
 
-.main-title {
-	width: 1200px;
-	text-align: center;
-	color: #212121;
-	font-size: 60px;
-	font-family: Inter, sans-serif;
-	font-weight: 700;
-	line-height: 70px;
-	word-wrap: break-word;
+/* Estilo de los botones */
+.sede-link, .sede-btn {
+    color: #1F1F1F;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    line-height: 20px;
+    word-wrap: break-word;
 }
 
-.description {
-	width: 768px;
-	text-align: center;
-	color: hsl(0, 0%, 38%);
-	font-size: 18px;
-	font-family: Inter, sans-serif;
-	font-weight: 600;
-	line-height: 24px;
-	word-wrap: break-word;
+.sede-link {
+    font-weight: 400;
 }
 
-.plan-box {
-	padding: 4px;
-	background: white;
-	border-radius: 12px;
-	overflow: hidden;
-	border: 1px solid #E0E0E0;
-	display: inline-flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+.sede-btn {
+    font-weight: 600;
+    line-height: 24px;
 }
 
-.plan {
-	width: 102px;
-	padding: 14px;
-	border-radius: 12px;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 6px;
+.sedes-container {
+    width: 100%;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.yellow-plan {
-	background: #EBFD01;
+.sedes-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-.plan-text {
-	text-align: center;
-	color: #1F1F1F;
-	font-size: 18px;
-	font-family: Inter, sans-serif;
-	font-weight: 600;
-	line-height: 24px;
-	word-wrap: break-word;
+.sedes-header h1 {
+    color: #212121;
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.sedes-header p {
+    color: #616161;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.sedes-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sede-card {
+    width: 380px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sede-image {
+    height: 140px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+}
+
+.sede-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sede-info h2 {
+    color: #18191E;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.sede-info p {
+    color: #18191E;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.sede-info small {
+    color: #737373;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.sede-actions {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sede-link {
+    padding: 6px 20px;
+    background: white;
+    border-radius: 100px;
+    border: 1px solid #EBFD01;
+    color: #1F1F1F;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sede-btn {
+    padding: 10px 83px;
+    background: #EBFD01;
+    border-radius: 10px;
+    color: #1F1F1F;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Estilos generales */
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 120px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+}
+
+.header-title {
+    width: 1200px;
+    text-align: center;
+    color: #212121;
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 70px;
+    word-wrap: break-word;
+}
+
+.header-subtitle {
+    text-align: center;
+    color: #616161;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+/* Estilos de los días de la semana */
+.weekdays-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 10px;
+}
+
+.weekday {
+    width: 80px;
+    height: 76px;
+    padding: 8px 0;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.weekday.active {
+    border-color: #18191E;
+}
+
+.weekday-number {
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 36px;
+    word-wrap: break-word;
+}
+
+.weekday-name {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+/* Estilos de las clases */
+.class-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    padding: 5px 59px;
+}
+
+.class-time {
+    color: black;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.class-card {
+    width: 217px;
+    height: 80px;
+    position: relative;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.class-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.class-title {
+    position: absolute;
+    left: 83px;
+    top: 19px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.class-instructor {
+    position: absolute;
+    left: 84px;
+    top: 45px;
+    color: black;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    word-wrap: break-word;
+}
+
+.reserve-btn {
+    padding: 10px 106px;
+    background: #18191E;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Contenedor principal de la sección */
+.subscribe-container {
+    width: 100%;
+    height: 100%;
+    padding: 120px;
+    background: #18191E;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Contenedor del contenido del boletín */
+.newsletter-content {
+    align-self: stretch;
+    background: #EBFD01;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Título del boletín */
+.newsletter-title {
+    width: 1200px;
+    text-align: center;
+    color: #212121;
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 70px;
+    word-wrap: break-word;
+}
+
+/* Subtítulo del boletín */
+.newsletter-subtitle {
+    text-align: center;
+    color: #616161;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+/* Contenedor del campo de suscripción */
+.subscription-box {
+    width: 452.67px;
+    padding: 8px 8px 8px 30px;
+    background: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contenedor del input de correo */
+.email-input-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Placeholder del input */
+.email-input-placeholder {
+    width: 16.67px;
+    height: 13.33px;
+    border: 1px solid #6C6C6C;
+}
+
+.email-input-text {
+    color: #737373;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+/* Botón de suscripción */
+.subscribe-btn {
+    width: 139px;
+    padding: 8px 20px;
+    background: #18191E;
+    border-radius: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+/* Suscríbete a nuestro boletín */
+.boletin-titulo {
+    color: #212121;
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 70px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* Tendrás acceso a todas nuestras promociones mensuales 😎 */
+.boletin-subtitulo {
+    color: #616161;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* Escribe tu correo */
+.boletin-placeholder {
+    color: #737373;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+/* Suscribirse */
+.boletin-boton {
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px 120px 100px 120px;
+    background: #18191E;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-info {
+    flex: 1 1 0;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-logo {
+    width: 243px;
+    height: 34px;
+    display: flex;
+    gap: 14.61px;
+}
+
+.logo-part1, .logo-part2 {
+    position: relative;
+    background: white;
+}
+
+.logo-part1 {
+    width: 64.8px;
+    height: 34px;
+}
+
+.logo-part2 {
+    width: 163.59px;
+    height: 22.88px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-text {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 25.6px;
+}
+
+.icon-envelope, .icon-phone, .icon-location, .icon-social1, .icon-social2, .icon-social3, .icon-social4 {
+    position: relative;
+    background: rgba(255, 255, 255, 0.40);
+}
+
+.icon-envelope {
+    width: 20px;
+    height: 16px;
+    border: 2px rgba(255, 255, 255, 0.80) solid;
+}
+
+.icon-phone {
+    width: 18.61px;
+    height: 18.61px;
+    border: 2px rgba(255, 255, 255, 0.80) solid;
+}
+
+.icon-location {
+    width: 16px;
+    height: 20px;
+    border: 2px rgba(255, 255, 255, 0.80) solid;
+}
+
+.footer-social {
+    display: flex;
+    gap: 24px;
+}
+
+.icon-social1, .icon-social2, .icon-social3, .icon-social4 {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-callout {
+    width: 800px;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.callout-box {
+    flex: 1 1 0;
+    padding: 10px;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.callout-title {
+    color: #212121;
+    font-size: 44px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+}
+
+.callout-subtitle {
+    color: #616161;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
 }
