@@ -1,0 +1,135 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1F1F1F;
+    padding: 0;
+    margin: 0;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styles */
+  .header {
+    width: 100%;
+    max-width: 1440px;
+    height: 174px;
+    padding: 55px 82px;
+    background: #1A1A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .frame41 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A1A1A;
+  }
+  
+  /* Logo Section */
+  .frame82 {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+  }
+  
+  .logo2 {
+    width: 95px;
+    height: 50px;
+    position: relative;
+  }
+  
+  .vector {
+    background: white;
+    position: absolute;
+  }
+  
+  .vector:nth-child(1) {
+    width: 27.05px;
+    height: 49.88px;
+    left: 24.67px;
+    top: 0.12px;
+  }
+  
+  .vector:nth-child(2) {
+    width: 19.69px;
+    height: 49.88px;
+    left: 0px;
+    top: 0.12px;
+  }
+  
+  .vector:nth-child(3) {
+    width: 27.05px;
+    height: 49.88px;
+    left: 43.28px;
+    top: 0px;
+  }
+  
+  .vector:nth-child(4) {
+    width: 19.69px;
+    height: 49.88px;
+    left: 75.31px;
+    top: 0px;
+  }
+  
+  /* Text Section */
+  .frame81 {
+    padding: 10px;
+  }
+  
+  .tu-cuenta {
+    color: white;
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  
+  /* Menu Section */
+  .menu {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .menu-item {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-text {
+    text-align: center;
+    color: #E0E0E0;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 36px;
+  }
+  
+  /* Button */
+  .boton-app {
+    padding: 10px 106px;
+    background: #EBFD01;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iniciar-sesion {
+    color: #1F1F1F;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
