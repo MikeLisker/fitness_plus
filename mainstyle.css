@@ -1,13 +1,14 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     color: #1F1F1F;
     padding: 0;
+    margin: 0;
     width: 1440px;
-    height: 4683px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -23,17 +24,21 @@ h2 {
     font-weight: 600;
     line-height: 44px;
     margin: 10px 0;
-    color: #616161;
+
     font-family: 'Inter', sans-serif;
 }
 
 p {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 24px;
     color: #616161;
     margin: 0;
     font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -50,7 +55,8 @@ p {
     width: 1440px;
     height: 140px;
     padding: 45px 24px;
-    background-image: url(https://via.placeholder.com/1440x175);
+    background-color: #212121;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,6 +79,7 @@ p {
 .logo-group {
     display: flex;
     gap: 16px;
+    color: #EBFD01;
 }
   
 .logo-shapes, .logo-text {
@@ -98,6 +105,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.menu-item:hover h1 {
+    color: #8c9602;
 }
 
 .menu-item h1{
@@ -119,21 +131,30 @@ p {
 }
   
 .button {
+    width: 100px;
+    height: 40px;
     padding: 10px 106px;
     background-color: #EBFD01;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
     color: #1F1F1F;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
 
+.button:hover {
+    background-color: #666d00;
+    color: #f0efef;
+}
+
 .banner {
    
-    width: 1490px;
+    width: 1440px;
     height: 620px;
     background-color: #EBFD01;
+    background-image: url(imagen-incio.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +162,9 @@ p {
 }
 
 .banner-content {
-    color: #1F1F1F;
+    width: 100%;
+    padding: 50px 120px;
+    color: #e4e4e4;
     z-index: 1;
 }   
 
@@ -160,8 +183,8 @@ p {
 }       
 
 .cta-button {
-    background-color: #1F1F1F;
-    color: white;
+    background-color: #EBFD01;
+    color: #1F1F1F;
     font-size: 18px;
     font-weight: 600;
     padding: 10px 20px;
@@ -171,6 +194,11 @@ p {
     border-radius: 4px;
     margin-top: 20px;
 }   
+
+.cta-button:hover {
+    background-color: #666d00;
+    color: #f0efef;
+}
 
 .plans-header h1 {
     font-size: 60px;
@@ -254,33 +282,37 @@ p {
     cursor: pointer;
 }
 
+.toggle-button:checked{
+    background-color: #EBFD01;
+    color: #1F1F1F;
+}
+
 .toggle-button.active {
     background-color: #EBFD01;
     color: #1F1F1F;
 }
 
-.plans {
+.planes {
     width: 100%;
-    height: 988px;
+
     padding: 50px 120px;
     display: flex;
     justify-content: center;
     gap: 18px;
-    flex-wrap: wrap;
-    position: relative;
+    
 }
 
 .plans-card-container {
     display: flex;
     justify-content: column;
-    gap: 18px;
+    gap: 20px;
 }
 
 .plan-card {
     background-color: white;
     border-radius: 24px;
     border: 2px solid #E0E0E0;
-    padding: 18px;
+    padding: 8px;
     width: calc(33.333% - 20px);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -288,6 +320,26 @@ p {
 
 .plan-card.recommended {
     border-color: #EBFD01;
+    width: calc(33.333% - 20px);
+}
+
+.recommended-badge{
+    background-color: #EBFD01;
+    color: #1F1F1F;
+    border-radius: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    width: calc(3333.333%+80px);
+}
+
+.recomendado{
+    width: calc(3333.333%-20px);
+    border-radius: 24px;
+    border: 2px solid #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .plan-card h2 {
@@ -366,8 +418,9 @@ p {
 }
 
 .features {
-    list-style: none;
+    
     padding: 0;
+
 }
 
 .features li {
@@ -411,7 +464,7 @@ p {
 
 .sedes-header {
     text-align: center;
-    gap: 20px;
+    gap: 9px;
     padding: auto;
 }  
 
@@ -419,7 +472,7 @@ p {
     font-size: 60px;
     font-weight: 700;
     color: #212121;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -432,10 +485,12 @@ p {
 }
 
 .sedes-list {
+    width: 100%;
     display: flex;
     justify-content: column;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+    padding: 50px 120px;
 }
 
 .sede-card {
@@ -450,6 +505,14 @@ p {
 .sede-image {
     height: 140px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    background-position: center;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .sede-info {
@@ -480,6 +543,7 @@ p {
 }
 
 .sede-link {
+    width: 140px;
     padding: 6px 20px;
     background: white;
     border-radius: 100px;
@@ -504,11 +568,17 @@ p {
 
 .class-schedule {
     width: 100%;
-    height: 620px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 120px;
+    gap: 40px;
+}
+
+.class-header {
+    text-align: center;
+    gap: 20px;
+    padding: auto;
 }
 
 .weekdays-container {
@@ -557,9 +627,18 @@ p {
     line-height: 20px;
 }
 
+.clases{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 34px;
+    flex-wrap: wrap;
+}
+
 .class-container {
     display: flex;
-    justify-content: column;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 18px;
 }
@@ -572,6 +651,7 @@ p {
     border-radius: 10px;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     position: relative;
@@ -602,6 +682,7 @@ p {
 }
 
 .reserve-btn {
+    width: 341px;
     padding: 10px 20px;
     background: #18191E;
     border-radius: 10px;
@@ -615,7 +696,6 @@ p {
 
 .subscribe-container {
     width: 1440px;
-    height: 620px;
     padding: 50px 120px;
     background: #18191E;
     display: flex;
@@ -681,12 +761,13 @@ p {
 
 .footer-container {
     width: 100%;
-    height: 614px;
     padding: 10px 120px 10px 120px;
     background: #18191E;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    gap: 60px;
 }
 
 .footer-info {
