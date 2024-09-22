@@ -55,7 +55,7 @@ header {
     max-width: 1920px;
     height: 94px;
     padding: 55px 82px;
-    background: #1A1A1A;
+    background-color:#EBFD01;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,12 +67,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1A1A1A;
+    background-color: #EBFD01;
 }
   
   /* Logo Section */
 .frame82 {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 31px;
 }
@@ -80,7 +81,7 @@ header {
 .logo2 {
     width: 95px;
     height: 50px;
-    position: relative;
+    
 }
   
 .vector {
@@ -95,7 +96,7 @@ header {
 }
   
 .tu-cuenta {
-    color: white;
+    color:#1A1A1A;
     font-size: 48px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -116,7 +117,7 @@ header {
   
 .menu-text {
     text-align: center;
-    color: #E0E0E0;
+    color: #1A1A1A;
     font-size: 26px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -125,14 +126,14 @@ header {
 }
 
 .menu-text:hover {
-    color: #EBFD01;
+    color:#E0E0E0;
 }
   
   /* Button */
 .boton-app {
     padding: 10px 106px;
     width: 10%;
-    background: #EBFD01;
+    background:#1A1A1A;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -141,7 +142,7 @@ header {
 }
 
 .boton-app h2 {
-    color: #1F1F1F;
+    color:#E0E0E0;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
