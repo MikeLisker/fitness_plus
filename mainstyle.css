@@ -4,7 +4,7 @@ body {
     color: #1F1F1F;
     padding: 0;
     margin: 0;
-    width: 1440px;
+    width: 1920px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@ a {
 }
 
 .container {
-    width: 1440px;
+    width: 1920px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -52,7 +52,7 @@ a {
 }
 
 .header {
-    width: 1440px;
+    width: 1920px;
     height: 140px;
     padding: 45px 24px;
     background-color: #212121;
@@ -151,7 +151,7 @@ a {
 
 .banner {
    
-    width: 1440px;
+    width: 1920px;
     height: 620px;
     background-color: #EBFD01;
     background-image: url(imagen-incio.png);
@@ -454,7 +454,7 @@ a {
 }
 
 .sedes-container {
-    width: 1440px;
+    width: 100%;
     padding: 50px 120px;
     display: flex;
     flex-direction: column;
@@ -694,18 +694,28 @@ img {
     text-align: center;
 }
 
-.subscribe-container {
-    width: 1440px;
+footer {
+    width: 19;
     padding: 50px 120px;
     background: #18191E;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-container {
+    width: 100%;
+    padding: 50px 120px;
+    background: #18191E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .newsletter-content {
-    width: 100%;
+    width: 80%;
     height: 360px;
     background: #EBFD01;
     border-radius: 40px;
