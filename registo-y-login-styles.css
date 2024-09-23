@@ -44,7 +44,8 @@ body {
 /*SECCION IZQUIERDA*/
 
 #seccion_izquierda {
-    background-image: url('img/fondo.jpg');
+    background-image: url('Imagenes/Fondo.jpg');
+    background-size: cover;
     width: 50%;
     height: 100%;
     color: white;
