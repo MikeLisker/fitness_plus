@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro</title>
+        <link rel="stylesheet" href="registo-y-login-styles.css">
+    </head>
+    <body>
+        <nav>
+            <img src="Vectores/Logo2.svg" alt="Logo" style="color: #E0E0E0;">
+            <p class="titulo">Registro de nuevo usuario</p>
+            <div class="caja_extra">
+                <p class="mini_titulo">¿Ya estas registrado?</p>
+                <a href="Login.html" class="button short-button-nav">Iniciar sesion</a>
+            </div>
+            <div class="caja_extra">
+                <p class="mini_titulo">¿Necesitas ayuda?</p>
+                <a href="Soporte.html" class="button short-button-nav">Soporte</a>
+            </div>
+        </nav>
+        <div id="informacion_personal">
+            <p class="titulo">Paso 2 de 3: Detalles Fitness</p>
+            <hr class="vector1">
+            <hr class="vector2">
+            <p class="subtitulo">Ayúdanos a conocer tus objetivos y preferencias para ofrecerte un plan personalizado:</p>
+            <form action="#">
+                <p class="label_formulario">Objetivo fitness:</p>
+                <select name="objetivo" id="objetivo">
+                    <option value="Perdida de peso">Perdida de peso</option>
+                    <option value="Ganancia de masa muscular">Ganancia de masa muscular</option>
+                    <option value="Mantenimiento">Mantenimiento</option>
+                </select>
+                <p class="label_formulario">Nivel de experiencia:</p>
+                <select name="nivel" id="nivel">
+                    <option value="Principiante">Principiante</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+                <p class="label_formulario">Condiciones medicas:</p>
+                <input type="text" name="correo" id="correo" required class="formulario_redondo" placeholder="Ejp: hernesto.2011@gmail.com">
+                <p class="label_formulario">Horario preferido para entrenar:</p>
+                <select name="horario" id="horario">
+                    <option value="Mañana">Mañana</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noche">Noche</option>
+                </select>
+                <p class="label_formulario">Peso:</p>
+                <div class="caja_peso">
+                    <input type="text" name="num_peso" id="num_peso">
+                    <select name="tipo_peso" id="tipo_peso">
+                        <option value="Kg">Kg</option>
+                        <option value="Lb">Lb</option>
+                    </select>
+                </div>
+                <p class="label_formulario">Altura:</p>
+                <div class="caja_peso">
+                    <input type="text" name="num_peso" id="num_peso">
+                    <select name="tipo_peso" id="tipo_peso">
+                        <option value="Kg">Kg</option>
+                        <option value="Lb">Lb</option>
+                    </select>
+                </div>
+                <div class="manejo_pagina">
+                    <a href="Registro.html" class="button" id="siguiente1">Anterior</a>
+                    <a href="Registro3.html" class="button" id="siguiente2">Siguiente</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
