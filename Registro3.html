@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro</title>
+        <link rel="stylesheet" href="registo-y-login-styles.css">
+    </head>
+    <body>
+        <nav>
+            <img src="Vectores/Logo2.svg" alt="Logo" style="color: #E0E0E0;">
+            <p class="titulo">Registro de nuevo usuario</p>
+            <div class="caja_extra">
+                <p class="mini_titulo">¿Ya estas registrado?</p>
+                <a href="Login.html" class="button short-button-nav">Iniciar sesion</a>
+            </div>
+            <div class="caja_extra">
+                <p class="mini_titulo">¿Necesitas ayuda?</p>
+                <a href="Soporte.html" class="button short-button-nav">Soporte</a>
+            </div>
+        </nav>
+        <div id="informacion_personal">
+            <p class="titulo">Paso 3 de 3: Configuración de la Cuenta</p>
+            <hr class="vector1">
+            <hr class="vector2">
+            <p class="subtitulo">Crea tus credenciales de acceso y selecciona tus preferencias de comunicación.</p>
+            <form action="#">
+                <p class="label_formulario">Nombre de usuario:</p>
+                <input type="text" name="correo" id="correo" required class="formulario_redondo" placeholder="Ejp: Angelemss">
+                <p class="label_formulario">Contrasena:</p>
+                <input type="text" name="correo" id="correo" required class="formulario_redondo" placeholder="Ejp: angel2022">
+                <p class="label_formulario">Confirma tu contrasena:</p>
+                <input type="text" name="correo" id="correo" required class="formulario_redondo" placeholder="Ejp: angel2021">
+                <p class="label_formulario">Medios de contacto preferidos:</p>
+                <select name="nivel" id="nivel">
+                    <option value="0">Contacto</option>
+                    <option value="1">Correo electronico</option>
+                    <option value="2">Telefono</option>
+                    <option value="3">Correo electronico y telefono</option>
+                </select>
+                <br>
+                <ul class="lista_terminos">
+                    <li>
+                        <input type="checkbox" name="terminos" id="terminos">
+                        <label for="terminos">Acepto que mis datos personales sean tratados de acuerdo con la Política de Privacidad.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="terminos" id="terminos">
+                        <label for="terminos">He leído y acepto los Términos y Condiciones.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="terminos" id="terminos">
+                        <label for="terminos">Acepto recibir notificaciones de entrenamientos personalizados.</label>
+                    </li>
+                </ul>
+                <div class="manejo_pagina">
+                    <a href="Registro2.html" class="button" id="siguiente1">Anterior</a>
+                    <a href="#Listo" class="button" id="siguiente2">Finalizar</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
