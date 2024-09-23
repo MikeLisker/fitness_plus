@@ -290,7 +290,7 @@ img {
 .sede-icon {
     width: 27.30px;
     height: 33.60px;
-    background-image: url("icono-location-point-black.svg");
+    background-image: url("Vectores/icono-location-point-black.svg");
 }
   
 .address-text {
@@ -328,7 +328,7 @@ img {
 .hours-icon {
     width: 68.97px;
     height: 69px;
-    background-image: url('icono-reloj-negro.svg');
+    background-image: url('Vectores/icono-reloj-negro.svg');
 }
   
 .hours-rectangle {
@@ -379,7 +379,7 @@ img {
 .down-arrow {
     width: 30px;
     height: 26px;
-    background-image: url("Down_Arrow.svg");
+    background-image: url("Vectores/Down_Arrow.svg");
 }
 
 .otras-sedes-container {
@@ -550,19 +550,19 @@ footer {
   .mail-icon {
     width: 24px;
     height: 24px;
-    background-image: url('icono-Mail.svg');
+    background-image: url('Vectores/icono-Mail.svg');
   }
 
   .phone-icon {
     width: 24px;
     height: 24px;
-    background-image: url('icono-phone.svg');
+    background-image: url('Vectores/icono-phone.svg');
   }
 
   .address-icon {
     width: 24px;
     height: 24px;
-    background-image: url('icono-marker-pin-01.svg');
+    background-image: url('Vectores/icono-marker-pin-01.svg');
   }
 
   
@@ -578,19 +578,19 @@ footer {
   }
   
 .icon.twitter {
-    background-image: url('icono-Twitter.svg');
+    background-image: url('Vectores/icono-Twitter.svg');
 }
 
 .icon.facebook {
-    background-image: url('icono-Facebook.svg');
+    background-image: url('Vectores/icono-Facebook.svg');
 }
 
 .icon.instagram {
-    background-image: url('icono-Instagram.svg');
+    background-image: url('Vectores/icono-Instagram.svg');
 }
 
 .icon.linkedin {
-    background-image: url('icono-LinkedIn.svg');
+    background-image: url('Vectores/icono-LinkedIn.svg');
 }
   
   /* CTA Section */

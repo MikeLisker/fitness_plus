@@ -251,15 +251,15 @@ header {
 }
   
 .cycling {
-    background-image: url('icono-Cycling.svg'); /* Icono personalizado */
+    background-image: url('Vectores/icono-Cycling.svg'); /* Icono personalizado */
 }
   
 .boxeo {
-    background-image: url('icono-Boxeo.svg'); /* Icono personalizado */
+    background-image: url('Vectores/icono-Boxeo.svg'); /* Icono personalizado */
 }
   
 .funcional {
-    background-image: url('icono-Funcional.svg'); /* Icono personalizado */
+    background-image: url('Vectores/icono-Funcional.svg'); /* Icono personalizado */
 }
   
 .clase-info h3 {
@@ -469,19 +469,19 @@ footer {
   .mail-icon {
     width: 24px;
     height: 24px;
-    background-image: url('icono-Mail.svg');
+    background-image: url('Vectores/icono-Mail.svg');
   }
 
   .phone-icon {
     width: 24px;
     height: 24px;
-    background-image: url('icono-phone.svg');
+    background-image: url('Vectores/icono-phone.svg');
   }
 
   .address-icon {
     width: 24px;
     height: 24px;
-    background-image: url('icono-marker-pin-01.svg');
+    background-image: url('Vectores/icono-marker-pin-01.svg');
   }
 
   
@@ -497,19 +497,19 @@ footer {
   }
   
 .icon.twitter {
-    background-image: url('icono-Twitter.svg');
+    background-image: url('Vectores/icono-Twitter.svg');
 }
 
 .icon.facebook {
-    background-image: url('icono-Facebook.svg');
+    background-image: url('Vectores/icono-Facebook.svg');
 }
 
 .icon.instagram {
-    background-image: url('icono-Instagram.svg');
+    background-image: url('Vectores/icono-Instagram.svg');
 }
 
 .icon.linkedin {
-    background-image: url('icono-LinkedIn.svg');
+    background-image: url('Vectores/icono-LinkedIn.svg');
 }
   
   /* CTA Section */
