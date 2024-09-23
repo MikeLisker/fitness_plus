@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Log In</title>
+        <link rel="stylesheet" href="registo-y-login-styles.css">
+    </head>
+    <body>
+        <div id="seccion_izquierda" class="login">
+            <img src="Vectores/Logo2.svg" alt="Logo" id="logo">
+            <p class="titulo">Bienvenido,</p>
+            <p class="parrafo">Tu nuevo estilo de vida comienza aqui</p>
+            <form action="#">
+                <p id="label_documento">Documento de Identificacion<p>
+                <select name="tipo_identi_login" id="tipo_identi_login">
+                    <option value="CC" selected>CC</option>
+                    <option value="TI">TI</option>
+                    <option value="CE">CE</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select>
+                <input type="text" name="id_login" id="id_login" placeholder="Numero de identificacion">
+                <p id="label_contrasena">Contraseña</p>
+                <input type="password" name="contrasena_login" id="contrasena_login" placeholder="Contraseña">
+                <input type="submit" value="Iniciar Sesion" id="boton_ingresar">
+            </form>
+            <p class="titulo_entrenador">¿Eres entrenador?</p>
+            <a href="LoginEntrenadores.html" id="botton_entrenador" class="button">Ingresar como entrenador</a>
+        </div>
+        <div id="seccion_derecha">
+            <div id="registro">
+                <p class="titulo">¿Eres nuevo?</p>
+                <p class="parrafo">¡Regístrate y descubre
+                    los beneficios!</p>
+                <a href="Registro.html" id="botton_registro" class="button">Registrarse</a>
+            </div>
+            <div id="contacto">
+                <p class="titulo">Únete a nuestro equipo</p>
+                <p class="parrafo">Para ser un entrenador</p>
+                <a href="RegistroEntrenadores.html" id="botton_contacto" class="button">Contáctanos</a>
+            </div>
+        </div>
+    </body>
+</html>
