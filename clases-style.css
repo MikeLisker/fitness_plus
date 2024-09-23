@@ -424,8 +424,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
     opacity: 0;
-    transition: visibility 1s, opacity 0.5s ease;
+    transition: visibility 0s, opacity 0.5s ease;
   }
   
   /* Contenedor del mensaje */
@@ -488,6 +489,7 @@ header {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
   }
+  
   
   .accept-button:hover {
     background-color: #333;
