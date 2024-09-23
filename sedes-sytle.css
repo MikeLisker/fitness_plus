@@ -49,7 +49,7 @@ p {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    color: #616161;
+   
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
@@ -367,6 +367,12 @@ img {
     display: flex;
     align-items: center;
     gap: 13px;
+    cursor: pointer;
+}
+
+.view-hours:hover .frame{
+    display: flex;
+    color: #EBFD01;
 }
   
 .view-hours-text {
@@ -377,8 +383,8 @@ img {
 }
   
 .down-arrow {
-    width: 30px;
-    height: 26px;
+    width: 26px;
+    height: 30px;
     background-image: url("Vectores/Down_Arrow.svg");
 }
 
@@ -481,7 +487,7 @@ img {
     color: #E0E0E0;
 }
   
-.btn-horario {
+.btn-horario{
     width: 330px;
     height: 45px;
     background-color: #EBFD01;
@@ -495,6 +501,185 @@ img {
     cursor: pointer;
 }
 
+.btn-horario.cajica{
+    background-color: #EBFD01;
+}
+
+.btn-horario.cajica:hover .frame-cajica {
+    background-color: #717900;
+    color: #f1f1f1;
+    display: flex;
+}
+  
+  /* Horario */
+
+.frame {
+    position: absolute;
+    left: 500px;
+    width: 486px;
+    padding: 37px 35px;
+    background: rgba(224, 224, 224, 0.76);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+  /* Tarjeta de horario */
+  .horario-card {
+    width: 100%;
+    padding: 21px 20px;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .horario-text {
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .estado {
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .abierto {
+    background: #ebfd01;
+    color: black;
+  }
+  
+  .cerrado {
+    background: #fc00b5;
+    color: #e0e0e0;
+  }
+  
+  /* Item de horario */
+  .horario-item {
+    width: 100%;
+    height: 62px;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .dia {
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .horario {
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .icon {
+    width: 27px;
+    height: 32px;
+    background: url('Vectores/icono-reloj-negro.svg');
+  }
+
+.frame-cajica {
+    position: absolute;
+    left: 800px;
+    width: 486px;
+    padding: 37px 35px;
+    background: rgba(224, 224, 224, 0.76);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+  /* Tarjeta de horario */
+  .horario-card {
+    width: 100%;
+    padding: 21px 20px;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .horario-text {
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .estado {
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .abierto {
+    background: #ebfd01;
+    color: black;
+  }
+  
+  .cerrado {
+    background: #fc00b5;
+    color: #e0e0e0;
+  }
+  
+  /* Item de horario */
+  .horario-item {
+    width: 100%;
+    height: 62px;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .dia {
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .horario {
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .icon {
+    width: 27px;
+    height: 32px;
+    background: url('Vectores/icono-reloj-negro.svg');
+  }
 
 footer {
     width: 100%;
