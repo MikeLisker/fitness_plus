@@ -152,6 +152,12 @@ header {
     cursor: pointer;
 }
 
+.boton-app.cuenta {
+    border-radius: 50px;
+    width: 20%;
+    height: 50px;
+}
+
 .boton-app h2 {
     color:#E0E0E0;
     font-size: 18px;
