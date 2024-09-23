@@ -136,8 +136,15 @@ header {
     cursor: pointer;
 }
 
+.menu-text.active {
+    color: #D9D9D9;
+    font-size: 34px;
+    text-decoration: underline;
+}
+
 .menu-text:hover {
     color:#E0E0E0;
+    font-size: 34px;
 }
   
   /* Button */
