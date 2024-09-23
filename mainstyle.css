@@ -8,10 +8,12 @@ body {
     color: #1F1F1F;
     padding: 0;
     margin: 0;
-    width: 1920px;
+    width: 100%;
+    max-width:1920px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     overflow-x: hidden;
 }
 
@@ -49,33 +51,32 @@ a {
     text-decoration: none;
 }
 
-.container {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 
 header {
     width: 1920px;
-    height: 94px;
+    height: 85px;
     padding: 45px 24px;
     background-color: #EBFD01;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     align-content: center;
-    box-shadow: inset 1532px 142px 250px 99px rgba(0, 0, 0, 0.25);
+    gap: 40px;
 }
 
+
+
 .frame {
-    width: 70%;
+    width: 100%;
+    height: 85px;
     max-width: 1920px;
+    padding: 45px 24px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    background-color: #EBFD01;
     align-content: center;
+    justify-content: space-around;
 }  
   
   
@@ -124,7 +125,7 @@ header {
 .menu-item h1{
     font-size: 30px;
     font-weight: 500;
-    color: #EBFD01;
+    color: #1F1F1F;
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
@@ -143,11 +144,11 @@ header {
     width: 100px;
     height: 40px;
     padding: 10px 106px;
-    background-color: #EBFD01;
+    background-color: #1F1F1F;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-    color: #1F1F1F;
+    color: #E0E0E0;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -160,18 +161,28 @@ header {
 
 .banner {
    
-    width: 1488px;
+    width: 100%;
     height: 620px;
     background-color: #EBFD01;
-    background-image: url(imagen-incio.png);
+    background-image: url('Imagenes/imagen-incio.png');
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .banner-content {
-    width: 100%;
+    width: 70%;
     padding: 50px 120px;
     color: #e4e4e4;
     z-index: 1;
@@ -303,7 +314,7 @@ header {
 
 .planes {
     width: 100%;
-
+    max-width: 1920px;
     padding: 50px 120px;
     display: flex;
     justify-content: center;
@@ -312,8 +323,10 @@ header {
 }
 
 .plans-card-container {
+    width: 100%;
     display: flex;
     justify-content: column;
+    align-content: center;
     gap: 20px;
 }
 
@@ -463,7 +476,7 @@ header {
 }
 
 .sedes-container {
-    width: 1440px;
+    width: 1920px;
     padding: 50px 120px;
     display: flex;
     flex-direction: column;
@@ -472,9 +485,13 @@ header {
 }
 
 .sedes-header {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     text-align: center;
     gap: 9px;
-    padding: auto;
 }  
 
 .sedes-header h1 {
@@ -703,8 +720,20 @@ img {
     text-align: center;
 }
 
+footer {
+    width: 90%;
+    max-width: 1920px;
+    padding: 10px 120px 10px 120px;
+    background: #18191E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
 .subscribe-container {
-    width: 1440px;
+    width: 1920px;
     padding: 50px 120px;
     background: #18191E;
     display: flex;
@@ -714,7 +743,7 @@ img {
 }
 
 .newsletter-content {
-    width: 100%;
+    width: 80%;
     height: 360px;
     background: #EBFD01;
     border-radius: 40px;
@@ -723,6 +752,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin: 20px 0;
     text-align: center;
 }
 
