@@ -787,6 +787,16 @@ footer {
     color: #737373;
     font-size: 18px;
     font-weight: 400;
+    text-decoration: none;
+}
+
+input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .subscribe-btn {
