@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro</title>
+        <link rel="stylesheet" href="registo-y-login-styles.css">
+    </head>
+    <body>
+        <nav>
+            <img src="Vectores/Logo2.svg" alt="Logo" style="color: #E0E0E0;">
+            <p class="titulo" style="font-weight: 600;">Registro Entrenadores</p>
+            <div class="caja_extra">
+                <p class="mini_titulo">¿Necesitas ayuda?</p>
+                <a href="Soporte.html" class="button short-button-nav">Soporte</a>
+            </div>
+        </nav>
+        <div class="envoltorio">
+            <div id="frase">
+                <p class="titulo">Regístrate como coach personalizado y forma parte de nuestro equipo . Tu registro será evaluado por un entrenador Senior.</p>
+            </div>
+            <div id="informacion">
+                <p class="titulo">Información Personal y Académica</p>
+                <form action="#">
+                    <p class="label_formulario">Nombre:</p>
+                    <input type="text" placeholder="Ejp: Sofia Maria Garzon Manrique" required class="formulario_redondo">
+                    <p class="label_formulario">Correo Electronico:</p>
+                    <input type="text" placeholder="Ejp: wawawahhhhangel@gmail.com" required class="formulario_redondo">
+                    <p class="label_formulario">Identificacion Universitaria:</p>
+                    <input type="text" placeholder="Ejp: 10203123829230" required class="formulario_redondo">
+                    <p class="label_formulario">Universidad y Sede:</p>
+                    <div class="caja_universidad">
+                        <select name="universidad" id="universidad" class="fecha_nacimiento_select">
+                            <option value="Universidad Militar Nueva Granada" selected>Universidad Militar Nueva Granada</option>
+                            <option value="Universidad de los Andes">Universidad de los Andes</option>
+                            <option value="Universidad Nacional">Universidad Nacional</option>
+                            <option value="Universidad de la Sabana">Universidad de la Sabana</option>
+                            <option value="Universidad de la Salle">Universidad de la Salle</option>
+                            <option value="Universidad Sergio Arboleda">Universidad Sergio Arboleda</option>
+                            <option value="Universidad Javeriana">Universidad Javeriana</option>
+                        </select>
+                        <select name="sede" id="sede" class="fecha_nacimiento_select">
+                            <option value="Cajica" selected>Cajica</option>
+                            <option value="Bogota">Bogota</option>
+                            <option value="Chia">Chia</option>
+                            <option value="Zipaquira">Zipaquira</option>
+                            <option value="Facatativa">Facatativa</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Mosquera">Mosquera</option>
+                        </select>
+                    </div>
+                    <p class="label_formulario">Carrera o programa:</p>
+                    <input type="text" placeholder="Ejp: Ingenieria multimedia" required class="formulario_redondo">
+                </form>
+            </div>
+            <div id="experiencia">
+                <p class="titulo">Experiencia en Fitness</p>
+                <form action="#">
+                    <p class="label_formulario">Tiempo de experiencia:</p>
+                    <select name="tiempo_exp" id="tiempo_exp" class="fecha_nacimiento_select">
+                        <option value="0">0 años</option>
+                        <option value="1">1 año</option>
+                        <option value="2">2 años</option>
+                        <option value="3">3 años</option>
+                        <option value="4">4 años</option>
+                        <option value="5">5 años</option>
+                    </select>
+                    <p class="label_formulario">Áreas de Especialización:</p>
+                    <select name="areas_exp" id="areas_exp" class="fecha_nacimiento_select">
+                        <option value="0">Selecciona una opción</option>
+                        <option value="1">Entrenamiento de fuerza</option>
+                        <option value="2">Entrenamiento de resistencia</option>
+                        <option value="3">Entrenamiento de flexibilidad</option>
+                        <option value="4">Entrenamiento de velocidad</option>
+                        <option value="5">Entrenamiento de potencia</option>
+                        <option value="6">Entrenamiento de equilibrio</option>
+                        <option value="7">Entrenamiento de coordinación</option>
+                        <option value="8">Entrenamiento de agilidad</option>
+                        <option value="9">Entrenamiento de precisión</option>
+                        <option value="10">Entrenamiento de resistencia anaeróbica</option>
+                        <option value="11">Entrenamiento de resistencia aeróbica</option>
+                        <option value="12">Entrenamiento de resistencia muscular</option>
+                        <option value="13">Entrenamiento de resistencia cardiovascular</option>
+                        <option value="14">Entrenamiento de resistencia metabólica</option>
+                        <option value="15">Entrenamiento de resistencia neuromuscular</option>
+                        <option value="16">Entrenamiento de resistencia articular</option>
+                        <option value="17">Entrenamiento de resistencia ósea</option>
+                        <option value="18">Entrenamiento de resistencia mental</option>
+                        <option value="19">Entrenamiento de resistencia emocional</option>
+                        <option value="20">Entrenamiento de resistencia espiritual</option>
+                    </select>
+                    <p class="label_formulario">Certificaciones o estudios relacionados:</p>
+                    <input type="text" placeholder="Ejp: Ninguna" required class="formulario_redondo">
+                    <p class="label_formulario">Descripcion de la experiencia:</p>
+                    <input type="text" placeholder="Ejp: Estuve en mi gimnasio anterior 3 años entrenando fuerza, resistencia y flexibilidad. " required class="formulario_redondo">
+                </form>
+                <br>
+                <ul class="lista_terminos">
+                    <li>
+                        <input type="checkbox" name="terminos" id="terminos">
+                        <label for="terminos">Confirmo que la información proporcionada es verídica y actual.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="terminos" id="terminos">
+                        <label for="terminos">Acepto que mi solicitud sea evaluada por un entrenador Senior.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="terminos" id="terminos">
+                        <label for="terminos">He leído y acepto los Términos y Condiciones.</label>
+                    </li>
+                </ul>
+                <div class="manejo_pagina">
+                    <a href="Login.html" class="button" id="siguiente1">Cancelar</a>
+                    <a href="#" class="button" id="siguiente2">Enviar Solicitud</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
