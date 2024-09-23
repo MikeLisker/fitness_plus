@@ -1,0 +1,608 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1F1F1F;
+    padding: 0;
+    margin: 0;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow-x: hidden;
+    gap: 91px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #616161;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+  
+  /* Header Styles */
+header {
+    width: 1920px;
+    max-width: 1920px;
+    height: 94px;
+    padding: 55px 82px;
+    background-color:#EBFD01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBFD01;
+}
+  
+  /* Logo Section */
+.frame82 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+  
+.logo2 {
+    width: 95px;
+    height: 50px;
+    
+}
+  
+.vector {
+    background: white;
+    position: absolute;
+}
+  
+  
+  /* Text Section */
+.frame81 {
+    padding: 10px;
+}
+  
+.tu-cuenta {
+    color:#1A1A1A;
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 44px;
+}
+  
+  /* Menu Section */
+.menu {
+    width: 86%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.menu-item {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+  
+.menu-text {
+    text-align: center;
+    color: #1A1A1A;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.menu-text:hover {
+    color:#E0E0E0;
+}
+  
+  /* Button */
+.boton-app {
+    padding: 10px 106px;
+    width: 10%;
+    background:#1A1A1A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boton-app h2 {
+    color:#E0E0E0;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    
+}
+
+.boton-app:hover, .boton-app:hover h2 {
+    background: #717900;
+    color: #f1f1f1;
+}
+  
+.iniciar-sesion {
+    color: #1F1F1F;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+/* Sede Section */
+.sede-principal-container {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+  
+.sede-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+  
+.sede-title {
+    width: 100%;
+    max-width: 793px;
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #1A1A1A;
+    text-align: left;
+}
+  
+  /* Sede Card */
+.sede-principal-card {
+    width: 40%;
+    max-width: 1920px;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+}
+  
+  /* Sede Image Overlay */
+.sede-image-overlay {
+    width: 100%;
+    height: 409px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+  
+  /* Sede Information */
+.sede-info {
+    position: absolute;
+    top: 437px;
+    left: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.sede-name {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.sede-location {
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+  
+.sede-address {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+  
+.sede-icon {
+    width: 27.30px;
+    height: 33.60px;
+    background-image: url("icono-location-point-black.svg");
+}
+  
+.address-text {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #1F1F1F;
+}
+  
+  /* Sede Hours Card */
+.sede-hours-card {
+    position: relative;
+    left: 120px;
+    background-color: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 12px 38px;
+    width: 100%;
+    align-content: center;
+}
+  
+.sede-hours-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.hours-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+}
+  
+.hours-icon {
+    width: 68.97px;
+    height: 69px;
+    background-image: url('icono-reloj-negro.svg');
+}
+  
+.hours-rectangle {
+    width: 3px;
+    height: 114px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    transform: rotate(180deg);
+  
+}
+  
+.hours-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.time-range {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+  
+.open-status {
+    background-color: #EBFD01;
+    padding: 2px 21px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    text-align: center;
+}
+  
+  /* View Hours */
+.view-hours {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+  
+.view-hours-text {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #1F1F1F;
+}
+  
+.down-arrow {
+    width: 30px;
+    height: 26px;
+    background-image: url("Down_Arrow.svg");
+}
+
+.otras-sedes-container {
+    width: 60%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 41px;
+    justify-content: center;
+}
+  
+.otras-sedes-titulo h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #1A1A1A;
+    text-align: left;
+    padding: 10px 0;
+}
+  
+.otras-sedes-cards {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 58px;
+}
+  
+.sede-card {
+    width: 456px;
+    height: 633px;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.sede-image {
+    width: 100%;
+    height: 290px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+  
+.sede-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    border-radius: inherit;
+}
+
+
+  
+.sede-content {
+    padding: 23px 38px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+  
+.sede-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #18191E;
+}
+  
+.sede-content p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #18191E;
+}
+  
+.sede-content span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #737373;
+}
+  
+.status {
+    width: 83px;
+    padding: 2px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+  
+.abierto {
+    background-color: #EBFD01;
+    color: black;
+}
+  
+.cerrado {
+    background-color: #FC00B5;
+    color: #E0E0E0;
+}
+  
+.btn-horario {
+    width: 330px;
+    height: 45px;
+    background-color: #EBFD01;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1F1F1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    max-width: 1920px;
+    padding: 36px 120px 67px 120px;
+    background-color: #18191E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+    gap: 20px;
+}
+  
+  /* Info Contacto Section */
+  .info-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .contact-item .email, .phone, .address {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 25.6px;
+  }
+  
+  .mail-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('icono-Mail.svg');
+  }
+
+  .phone-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('icono-phone.svg');
+  }
+
+  .address-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('icono-marker-pin-01.svg');
+  }
+
+  
+  .social-icons {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    
+  }
+  
+.icon.twitter {
+    background-image: url('icono-Twitter.svg');
+}
+
+.icon.facebook {
+    background-image: url('icono-Facebook.svg');
+}
+
+.icon.instagram {
+    background-image: url('icono-Instagram.svg');
+}
+
+.icon.linkedin {
+    background-image: url('icono-LinkedIn.svg');
+}
+  
+  /* CTA Section */
+.cta-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-box {
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-text {
+    text-align: center;
+  }
+  
+  .cta-title {
+    color: #212121;
+    font-size: 44px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+  }
+  
+  .cta-subtitle {
+    color: #616161;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+  }
