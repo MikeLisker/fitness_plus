@@ -56,6 +56,7 @@ p {
 
 a {
     text-decoration: none;
+    margin: 0 ;
 }
   
   /* Header Styles */
@@ -72,6 +73,7 @@ header {
 
 .header-container {
     width: 70%;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,7 +163,7 @@ header {
 
 .boton-app {
     padding: 10px 106px;
-    width: 10%;
+    width: 10px;
     background:#1A1A1A;
     border-radius: 10px;
     display: flex;
@@ -177,12 +179,14 @@ header {
     height: 30px;
 }
 
+
+
 .boton-app h2 {
     color:#E0E0E0;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    
+    margin: 0;
 }
 
 .boton-app:hover, .boton-app:hover h2 {
@@ -197,304 +201,219 @@ header {
     font-weight: 600;
 }
 
-/* Sede Section */
-.sede-principal-container {
+.tus-clases-container {
     width: 100%;
     max-width: 1920px;
-    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 38px;
+    gap: 33px;
+    text-align: left;
 }
-  
-.sede-title-container {
+
+.titulo-clases {
     width: 100%;
+    max-width: 1920px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-   
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
   
-.sede-title {
-    width: 100%;
-    max-width: 793px;
+.titulo-clases h2 {
     font-size: 48px;
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: #1A1A1A;
     text-align: left;
 }
   
-  /* Sede Card */
-.sede-principal-card {
-    width: 40%;
-    max-width: 1920px;
-    height: 690px;
+.clases-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid #E0E0E0;
+    gap: 25px;
 }
   
-  /* Sede Image Overlay */
-.sede-image-overlay {
-    width: 100%;
-    height: 409px;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-  
-  /* Sede Information */
-.sede-info {
-    position: absolute;
-    top: 437px;
-    left: 27px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-  
-.sede-name {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-  
-.sede-location {
-    font-size: 32px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    color: #1A1A1A;
-}
-  
-.sede-address {
-    display: flex;
-    align-items: center;
-    gap: 21px;
-}
-  
-.sede-icon {
-    width: 27.30px;
-    height: 33.60px;
-    background-image: url("Vectores/icono-location-point-black.svg");
-}
-  
-.address-text {
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    color: #1F1F1F;
-}
-  
-  /* Sede Hours Card */
-.sede-hours-card {
-    position: relative;
-    left: 120px;
-    background-color: white;
+.tu-clase-card {
+    width: 743px;
+    height: 80px;
+    background: white;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    padding: 12px 38px;
-    width: 100%;
-    align-content: center;
-}
-  
-.sede-hours-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
   
-.hours-time {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 27px;
+.clase-icon {
+    width: 40px;
+    height: 40px;
 }
   
-.hours-icon {
-    width: 68.97px;
-    height: 69px;
-    background-image: url('Vectores/icono-reloj-negro.svg');
+.cycling {
+    background-image: url('Vectores/icono-Cycling.svg'); /* Icono personalizado */
 }
   
-.hours-rectangle {
-    width: 3px;
-    height: 114px;
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    transform: rotate(180deg);
-  
+.boxeo {
+    background-image: url('Vectores/icono-Boxeo.svg'); /* Icono personalizado */
 }
   
-.hours-details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.funcional {
+    background-image: url('Vectores/icono-Funcional.svg'); /* Icono personalizado */
 }
   
-.time-range {
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
+.clase-info h3 {
+    font-size: 18px;
+    font-weight: 600;
     color: black;
+    text-align: left;
 }
   
-.open-status {
-    background-color: #EBFD01;
-    padding: 2px 21px;
-    border-radius: 5px;
-    font-size: 12px;
-    font-family: 'Inter', sans-serif;
-    color: black;
-    text-align: center;
-}
-  
-  /* View Hours */
-.view-hours {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-}
-  
-.view-hours-text {
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
+.clase-info p {
+    font-size: 10px;
     font-weight: 400;
-    color: #1F1F1F;
+    color: black;
 }
   
-.down-arrow {
-    width: 30px;
-    height: 26px;
-    background-image: url("Vectores/Down_Arrow.svg");
+.clase-details {
+    display: flex;
+    gap: 15px;
+}
+  
+.clase-date, .clase-time {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+  
+.agregar-clase-card {
+    width: 743px;
+    height: 80px;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.otras-sedes-container {
-    width: 60%;
-    max-width: 1920px;
+.agregar-clase-card:hover {
+    background: #f1f1f1;
+    cursor: pointer;
+}  
+.agregar-clase-card p {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+  
+.reservas-container {
+    width: 100%;
+    max-width: 1220px;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    gap: 41px;
-    justify-content: center;
-}
+    align-items: flex-start;
+    gap: 38px;
+  }
   
-.otras-sedes-titulo h2 {
+  .reservas-header h2 {
     font-size: 40px;
     font-weight: 600;
     color: #1A1A1A;
-    text-align: left;
-    padding: 10px 0;
-}
+    padding-left: 120px;
+  }
   
-.otras-sedes-cards {
-    width: 100%;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 58px;
-}
-  
-.sede-card {
-    width: 456px;
-    height: 633px;
-    background: #fff;
-    border-radius: 15px;
-    border: 1px solid #E0E0E0;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-  
-.sede-image {
-    width: 100%;
-    height: 290px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: relative;
-}
-  
-.sede-overlay {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
-    border-radius: inherit;
-}
-
-
-  
-.sede-content {
-    padding: 23px 38px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-  
-.sede-content h3 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #18191E;
-}
-  
-.sede-content p {
-    font-size: 18px;
-    font-weight: 600;
-    color: #18191E;
-}
-  
-.sede-content span {
-    font-size: 14px;
-    font-weight: 500;
-    color: #737373;
-}
-  
-.status {
-    width: 83px;
-    padding: 2px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 12px;
-}
-  
-.abierto {
-    background-color: #EBFD01;
-    color: black;
-}
-  
-.cerrado {
-    background-color: #FC00B5;
-    color: #E0E0E0;
-}
-  
-.btn-horario {
-    width: 330px;
-    height: 45px;
-    background-color: #EBFD01;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #1F1F1F;
+  .fechas-semana {
     display: flex;
     justify-content: center;
+    gap: 25px;
+    padding: 0 100px;
+  }
+  
+  .fecha-card {
+    width: 80px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+  }
+  
+  .fecha-card.active {
+    border-color: #18191E;
+  }
+  
+  .dia-numero {
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .dia-texto {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .clases-disponibles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    padding: 0 59px;
+  }
+  
+  .clase-card {
+    width: 217px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  
+  .clase-hora {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .clase-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .clase-info p {
+    font-size: 10px;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .boton-reservar button {
+    padding: 10px 20px;
+    background-color: #18191E;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
     cursor: pointer;
-}
-
+  }
+  
+  .boton-reservar button:hover {
+    background-color: #333;
+  }
+  
 
 footer {
     width: 100%;
