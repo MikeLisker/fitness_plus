@@ -147,6 +147,9 @@ header {
     background-color: #1F1F1F;
     border-radius: 10px;
     text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     cursor: pointer;
     color: #E0E0E0;
     font-size: 18px;
