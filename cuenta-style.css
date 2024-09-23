@@ -308,12 +308,36 @@ header {
     cursor: pointer;
 }
 
-.progreso:hover {
+.progreso#dato-nuevo {
+    background: #D9D9D9;
+    color: #737373;
+    border: 0;
+}
+
+.grafica-progreso {
+    position:absolute;
+    top: 1000px;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0px 0px 4px rgba(238, 255, 0, 0.24);
+    background: #ecfd0156;
+    z-index: 10;
+}
+
+
+.progreso:hover  {
     background: #EBFD01;
     color: #818181;
-    box-shadow: 0px 0px 10px rgba(229, 255, 0, 0.897);  
+    display: flex;
 }
   
+.progreso:hover .grafica-progreso {
+    display: flex;  
+}
   /* Sede Section */  
 
 .sedes {
