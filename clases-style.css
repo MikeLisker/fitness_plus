@@ -195,6 +195,15 @@ header {
     gap: 33px;
     text-align: left;
 }
+
+.titulo-clases {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
   
 .titulo-clases h2 {
     font-size: 48px;
@@ -209,7 +218,7 @@ header {
     gap: 25px;
 }
   
-.clase-card {
+.tu-clase-card {
     width: 743px;
     height: 80px;
     background: white;
@@ -227,15 +236,15 @@ header {
 }
   
 .cycling {
-    background-image: url('/path/to/cycling-icon.png'); /* Icono personalizado */
+    background-image: url('icono-Cycling.svg'); /* Icono personalizado */
 }
   
 .boxeo {
-    background-image: url('/path/to/boxeo-icon.png'); /* Icono personalizado */
+    background-image: url('icono-Boxeo.svg'); /* Icono personalizado */
 }
   
 .funcional {
-    background-image: url('/path/to/funcional-icon.png'); /* Icono personalizado */
+    background-image: url('icono-Funcional.svg'); /* Icono personalizado */
 }
   
 .clase-info h3 {
@@ -272,9 +281,257 @@ header {
     justify-content: center;
     align-items: center;
 }
-  
+
+.agregar-clase-card:hover {
+    background: #f1f1f1;
+    cursor: pointer;
+}  
 .agregar-clase-card p {
     font-size: 18px;
     font-weight: 600;
     color: black;
 }
+
+  
+.reservas-container {
+    width: 100%;
+    max-width: 1220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 38px;
+  }
+  
+  .reservas-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #1A1A1A;
+    padding-left: 120px;
+  }
+  
+  .fechas-semana {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 100px;
+  }
+  
+  .fecha-card {
+    width: 80px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+  }
+  
+  .fecha-card.active {
+    border-color: #18191E;
+  }
+  
+  .dia-numero {
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .dia-texto {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .clases-disponibles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    padding: 0 59px;
+  }
+  
+  .clase-card {
+    width: 217px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  
+  .clase-hora {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .clase-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .clase-info p {
+    font-size: 10px;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .boton-reservar button {
+    padding: 10px 20px;
+    background-color: #18191E;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .boton-reservar button:hover {
+    background-color: #333;
+  }
+  
+
+footer {
+    width: 100%;
+    max-width: 1920px;
+    padding: 36px 120px 67px 120px;
+    background-color: #18191E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+    gap: 20px;
+}
+  
+  /* Info Contacto Section */
+  .info-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .contact-item .email, .phone, .address {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 25.6px;
+  }
+  
+  .mail-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('icono-Mail.svg');
+  }
+
+  .phone-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('icono-phone.svg');
+  }
+
+  .address-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('icono-marker-pin-01.svg');
+  }
+
+  
+  .social-icons {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    
+  }
+  
+.icon.twitter {
+    background-image: url('icono-Twitter.svg');
+}
+
+.icon.facebook {
+    background-image: url('icono-Facebook.svg');
+}
+
+.icon.instagram {
+    background-image: url('icono-Instagram.svg');
+}
+
+.icon.linkedin {
+    background-image: url('icono-LinkedIn.svg');
+}
+  
+  /* CTA Section */
+.cta-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-box {
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-text {
+    text-align: center;
+  }
+  
+  .cta-title {
+    color: #212121;
+    font-size: 44px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+  }
+  
+  .cta-subtitle {
+    color: #616161;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+  }
