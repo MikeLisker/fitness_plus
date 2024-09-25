@@ -17,25 +17,19 @@
                 <div class="tu-cuenta">TU CUENTA</div>
               </div>
             </div>
-            <div class="menu">
-              <div class="menu-item">
-                <a href="sedes2.html"><div class="menu-text">Sedes</div></a>
-              </div>
-              <div class="menu-item">
-                <a href="clases2.html"><div class="menu-text">Clases</div></a>
-              </div>
-              <div class="menu-item">
-                <div class="menu-text">Rutina</div>
-              </div>
-            </div>
+            <nav class="menu">
+              <ul>
+                <a href="sedes2.html"><li class="menu-text">Sedes</li></a>
+                <a href="clases2.html"><li class="menu-text">Clases</li></a>
+                <a href=""><li class="menu-text">Rutina</li></a>
+              </ul>
+            </nav>
             <a href="loggedin.html">
               <div class="boton-app">
                 <h2>Inicio</h2>
               </div>
-            </a>
-            
-          </div>
-
+            </a>        
+        </div>
     </header>
     <section class="cuenta-info">
         <div class="tu-cuenta-title">Tu Cuenta</div>
@@ -48,42 +42,34 @@
     </section>
 
     <section clas="medidas-container">
-        <div class="titulo-tallaje">Tallaje</div>
+        <div class="plan-info-title">
+          <h2 id="subtitulo">Tallaje</h2>
+        </div>
         <div class="medidas">
             <div class="medidas-info">
-                <div class="medida">
-                    <div class="valor">83 Kg</div>
-                    <div class="label">Peso</div>
-                </div>
+              <ul id="medidas">
+                <li class="valor">83 Kg<br><span class="label">peso</span></li>
                 <div class="separador"></div>
-                <div class="medida">
-                    <div class="valor">25%</div>
-                    <div class="label">Grasa</div>
-                </div>
+                <li class="valor">25 %<br><span class="label">grasa</span></li>
                 <div class="separador"></div>
-                <div class="medida">
-                    <div class="valor">40 %</div>
-                    <div class="label">M. muscular</div>
-                </div>
+                <li class="valor">40 %<br><span class="label">m. muscular</span></li>
+              </ul>
             </div>
             <div class="progreso">
                 Progreso
                 <div class="grafica-progreso"></div>
             </div>
-            
-            <div class="progreso" id="dato-nuevo">
-              Añadir nuevo dato
+            <div id="dato-nuevo">
+              <p>Nuevo Registro</p>
             </div>
-            
         </div>
-
     </section>
 
     <section class="sedes">
-        <div class="sede-title">Sede</div>
+        <div class="plan-info-title"><h2 id="subtitulo">Sede</h2></div>
         <div class="sede-info">
             <div class="sede-details">
-            <div class="sede-name">Universidad Militar Calle 100</div>
+            <h2>Universidad Militar Calle 100</h2>
             <div class="sede-location">
                 <div class="location-icon"><img src="Vectores/icono-location-point-black.svg" alt="lacacion"></div>
                 <div class="location-text">Carrera 11 # 101 - 80 Sótano</div>
@@ -114,7 +100,7 @@
 
     <section class="rutina">
         <div class="rutina-title-container">
-            <div class="rutina-title">Rutina</div>
+            <h2 id="subtitulo">Rutina</h2>
           </div>
           <div class="ver-rutina-container">
             <div class="progreso">
@@ -124,7 +110,7 @@
 
     <section class="plan">
         <div class="plan-title-container">
-            <div class="plan-title">Plan</div>
+            <h2 id="subtitulo">Plan</h2>
           </div>
           
           <div class="plan-details-container">

@@ -71,6 +71,16 @@ header {
     align-items: center;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
 .header-container {
     width: 70%;
     
@@ -146,7 +156,6 @@ header {
 
 .menu-text:hover {
     color:#E0E0E0;
-    font-size: 34px;
 }
   
   /* Button */

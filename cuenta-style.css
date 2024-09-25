@@ -4,13 +4,12 @@ body{
     color: #1F1F1F;
     padding: 0;
     margin: 0;
-    width: 1920px;
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    gap: 91px;
+    gap: 70px;
 }
 
 * {
@@ -32,7 +31,6 @@ h2 {
     font-weight: 600;
     line-height: 30px;
     margin: 0;
-
     font-family: 'Inter', sans-serif;
 }
 
@@ -51,8 +49,7 @@ a {
   
   /* Header Styles */
 header {
-    width: 1920px;
-    max-width: 1920px;
+    width: 100%;
     height: 94px;
     padding: 55px 82px;
     background-color:#EBFD01;
@@ -61,6 +58,24 @@ header {
     align-items: center;
 }
 
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+ul #medidas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
   
 .header-container {
     width: 70%;
@@ -218,12 +233,10 @@ header {
 
   /* Medidas Section */
 .medidas-container {
-    width: 1920px;
-    max-width: 100 x;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
     gap: 32px;
     margin: 50px 50px;
 }
@@ -241,18 +254,17 @@ header {
 }
   
 .medidas {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 51px;
+    gap: 40px;
 }
 
 .medida {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:  center;
     align-items: center;
     gap: 3px;
     text-align: center;
@@ -260,7 +272,6 @@ header {
   
 .medidas-info {
     width: 100%;
-    max-width: 399px;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -342,13 +353,12 @@ header {
 
 .sedes {
     width: 100%;
-    max-width: 100 x;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 9px;
+    text-align: left;
 }
   
   /* Sede Title */
@@ -722,7 +732,6 @@ header {
   /* Footer Section */
 footer {
     width: 100%;
-    max-width: 1920px;
     padding: 36px 120px 67px 120px;
     background-color: #18191E;
     display: flex;
@@ -854,4 +863,27 @@ footer {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     line-height: 24px;
+  }
+
+  #dato-nuevo {
+    width: 100%;
+    height: 44px;
+    background: #ffffff;
+    color: #737373;
+    border: 2px solid #D9D9D9;
+    border-radius: 24px;
+    text-align: center;
+    align-content: center;
+  }
+
+  #dato-nuevo:hover {
+    background: #EBFD01;
+    color: #818181;
+  }
+
+  #subtitulo {
+    flex: 1;
+    position: relative;
+    justify-content: flex-start;
+    margin: 10px 0;
   }
