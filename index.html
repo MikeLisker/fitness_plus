@@ -1,298 +1,368 @@
-<!DO<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Plus</title>
-    <link rel="stylesheet" href="mainstyle.css">
-</head>
-<body>
+    <title>Fitness Plus 🏋️‍♂️ - El único gimnasio donde tienes coach personalizado 1 a 1</title>
+    <link rel="stylesheet" href="styles.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <meta property="og:title" content="Fitness Plus 🏋️‍♂️ - Tu gimnasio con coach personalizado en cada plan">
+    <meta property="og:description" content="Entrena en Fitness Plus con planes personalizados, acceso a múltiples sedes y clases grupales. ¡Únete hoy y disfruta de un coach 1 a 1 en todos los planes!">
+    <meta property="og:url" content="https://fitnessplus.andrxsgomez.com">
+    <meta property="og:image" content="https://fitnessplus.andrxsgomez.com/images/banner2.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fitness Plus 🏋️‍♂️ - Tu gimnasio con coach personalizado en cada plan">   
+    <meta name="twitter:description" content="Entrena en Fitness Plus con planes personalizados, acceso a múltiples sedes y clases grupales. ¡Únete hoy y disfruta de un coach 1 a 1 en todos los planes!">   
+    <meta name="twitter:image" content="https://fitnessplus.andrxsgomez.com/images/banner2.jpg">
+</head>
+
+<body>
     <header>
-        <div class="logo">
-            <div class="logo-group">
-                <img src="Vectores/logo.svg" alt="Fitness Plus Logo">
-            </div>
-        </div>
-        <div class="menu">
-            <div class="menu-item">
-                <a href="#planes"><h1 class="header">Planes</h1></a>
-            </div>
-            <div class="menu-item">
-                <a href="#sedes"><h1 class="header">Sedes</h1></a>
-            </div>
-            <div class="menu-item">
-                <a href="#clases"><h1 class="header">Clases</h1></a>
-            </div>
-        </div>
-        <div class="session">
-            <a href="Login.html"><div class="button">Iniciar Sesión</div></a>
+        <div class="container header-container">
+
+            <a href="/" class="logo">
+                <img src="images/logo.svg" alt="Fitness Plus Logo" class="logo-img">
+            </a>
+    
+            <nav class="nav-menu">
+                <a href="#">Sedes</a>
+                <a href="#">Planes</a>
+                <a href="#">Clases</a>
+            </nav>
+    
+            <a href="#" class="boton-iniciar-sesion">Iniciar Sesión</a>
         </div>
     </header>
 
-    <section class="banner">
-        <div class="container banner-content">
-            <h2>¡Inscríbete ahora!</h2>
-            <h1>El único gimnasio donde tienes coach personalizado 1 a 1</h1 >
-            <a href="#" class="cta-button">Hablar con un asesor</a>
+    <section class="hero">
+        <div class="slider">
+            <img src="images/sede_cien.webp" alt="Sede Calle 100 - Universidad Militar Nueva Granada" class="slide" loading="lazy">
+            <img src="images/sede_cajica.webp" alt="Sede Campus Cajicá - Universidad Militar Nueva Granada" class="slide" loading="lazy">
+            <img src="images/sede_cundinamarca.webp" alt="Sede Universidad de Cundinamarca" class="slide" loading="lazy">
+            <img src="images/sede_distrital.webp" alt="Sede Universidad Distrital" class="slide" loading="lazy">
+            <img src="images/sede_hospital.webp" alt="Sede Hospital Militar" class="slide" loading="lazy">
+            <img src="images/sede_nacional.webp" alt="Sede Universidad Nacional" class="slide" loading="lazy">
+            <img src="images/sede_sopo.webp" alt="Sede Universidad de Sopó" class="slide" loading="lazy">
+        </div>
+
+        <div class="overlay"></div>
+            <div class="hero-content">
+                <p class="subtituloshero">¡Inscríbete ahora!</p>
+                <h1 class="tituloshero">El único gimnasio donde tienes coach personalizado 1 a 1</h1>
+                <a href="#" class="boton-cta">Hablar con un asesor</a>
+            </div>
         </div>
     </section>
 
-    <section class="planes" id="planes">
-        <div class="plans-container">
-            <div class="plans-header">
-                <h1>Elige tu plan y entrena ya</h1>
-                <p>Encuentra el plan perfecto para tus objetivos y comienza tu transformación hoy mismo.</p>
-            </div>
-        
-            <div class="plan-toggle">
-                <button class="toggle-button active">Mensual</button>
-                <button class="toggle-button">Anual</button>
-            </div>
-        
-            <div class="plans-card-container">
-                <div class="plan-card">
-                    <h2>Oro</h2>
-                    <p class="price">$120.000 <span>/mes</span></p>
-                    <p class="billing-info">Facturado Mensualmente</p>
-                    <ul class="features">
-                        <li><p>Acceso ilimitado a 2 sedes</p></li>
-                        <li><p>Entrena con 2 amigos al mes</p></li>
-                        <li><p>Reserva hasta 2 clases a la semana</p></li>
-                        <li><p>Plan de entrenamiento básico</p></li>
-                        <li><p>10 preguntas personalizadas al coach</p></li>
-                        <li><p>Fitness Plus App | Rutinas</p></li>
-                        <li><p>Acceso a todas las áreas de la sede</p></li>
-                    </ul>
-                    <button class="cta-button">Iniciar Sesión</button>
-                </div>
+    <section>
+        <div class="titulos-secciones">
+            <h2 class="titulos-principales">Elige tu plan y entrena ya</h2>
+            <p class="sub-texto ">Encuentra el plan perfecto para tus objetivos y comienza tu transformación hoy mismo.<p/>
+        </div>
 
-               
-                <div class="plan-card recommended">  
-                    <div class="recommended-badge">Recomendado</div>
-                    <h2>Diamante</h2>
-                    <p class="price">$170.000 <span>/mes</span></p>
-                    <p class="billing-info">Facturado Mensualmente</p>
-                    <ul class="features">
-                        <li><p>ilimitado a 4 sedes</p></li>
-                        <li><p>Entrena con 4 amigos al mes</p></li>
-                        <li><p>Reserva hasta 4 clases a la semana</p></li>
-                        <li><p>Plan de entrenamiento avanzado</p></li>
-                        <li><p>15 preguntas personalizadas al coach</p></li>
-                        <li><p>Fitness Plus App | Rutinas</p></li>
-                        <li><p>Acceso a todas las áreas de la sede</p></li>
-                    </ul>
-                        <button class="cta-button">Iniciar Sesión</button>
-                </div>
-                
-          
-                <div class="plan-card">
-                    <h2>Platino</h2>
-                    <p class="price">$250.000 <span>/mes</span></p>
-                    <p class="billing-info">Facturado Mensualmente</p>
-                    <ul class="features">
-                        <li><p>Acceso ilimitado a todas las sedes</p></li>
-                        <li><p>Entrena con 10 amigos al mes</p></li>
-                        <li><p>Reserva hasta 10 clases a la semana</p></li>
-                        <li><p>Plan de entrenamiento completo</p></li>
-                        <li><p>Preguntas ilimitadas al coach</p></li>
-                        <li><p>Fitness Plus App | Rutinas</p></li>
-                        <li><p>Acceso a todas las áreas de la sede</p></li>
-                    </ul>
-                    <button class="cta-button">Iniciar Sesión</button>
-                </div>
+        <div class="toggle-wrapper">
+            <div class="toggle-container">
+              <button class="toggle-option active">Mensual</button>
+              <button class="toggle-option">Anual</button>
             </div>
         </div>
         
-    </section>
+        <div class="card-container">
+            <div class="plan-card">
+                <p class="subtitulos">Oro</p>
+                <div class="precio-contenedor">
+                    <span class="precios">$120.000</span>
+                    <span class="texto-planes">/mes</span>
+                </div>
+                <p class="textos2">Facturado Mensualmente</p>
+                <hr class="divisora">
+                <div class="beneficios">
+                    <ul>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Acceso ilimitado a 2 sedes</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Entrena con 2 amigos al mes</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Reserva hasta 2 clases a la semana</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Plan de entrenamiento básico</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">10 preguntas personalizadas al coach</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Fitness Plus App | Rutinas</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Acceso a todas las áreas de la sede</li>
+                    </ul>
+                </div>    
+                <button class="boton-cta2">Iniciar Sesión</button>
+            </div>
 
-    <section class="sedes-container" id="sedes">
-        <div class="sedes-header">
-            <h1>¿Dónde quieres entrenar?</h1>
-            <h2>Recuerda que nuestro plan más básico te ofrece acceso a dos sedes 😎</h2>
-        </div>
-        <div class="sedes-list">
-            <!-- Sede Calle 100 -->
-            <div class="sede-card">
-                <div class="sede-image"><img src="Imagenes/imagen-incio.png" alt="sede_100"></div>
-                <div class="sede-info">
-                    <h2 class="sede-title">Sede Calle 100</h2>
-                    <small class="sede-address">Cra. 11 #101 - 80. Bogotá</small>
-                    <div class="sede-actions">
-                        <a href="sedes.html" class="sede-link">Ver sede</a>
-                        <a href="#" class="sede-btn">¡Inscribirme ahora!</a>
+            
+            <div class="recomendado-wrapper">
+                <p class="recomendado">Recomendado</p>
+                <div class="plan-card-recomendado">
+                    <p class="subtitulos">Diamante</p>
+                    <div class="precio-contenedor">
+                        <span class="precios">$170.000</span>
+                        <span class="texto-planes">/mes</span>
                     </div>
-                </div>
+                    <p class="textos2">Facturado Mensualmente</p>
+                    <hr class="divisora">
+                    <div class="beneficios">
+                        <ul>
+                            <li><img src="images/check.svg" alt="check" loading="lazy">Acceso ilimitado a 4 sedes</li>
+                            <li><img src="images/check.svg" alt="check" loading="lazy">Entrena con 4 amigos al mes</li>
+                            <li><img src="images/check.svg" alt="check" loading="lazy">Reserva hasta 4 clases a la semana</li>
+                            <li><img src="images/check.svg" alt="check" loading="lazy">Plan de entrenamiento avanzado</li>
+                            <li><img src="images/check.svg" alt="check" loading="lazy">15 preguntas personalizadas al coach</li>
+                            <li><img src="images/check.svg" alt="check" loading="lazy">Fitness Plus App | Rutinas</li>
+                            <li><img src="images/check.svg" alt="check" loading="lazy">Acceso a todas las áreas de la sede</li>
+                        </ul>
+                    </div>    
+                    <button class="boton-cta2">Iniciar Sesión</button>
+                </div>    
             </div>
-            <!-- Sede Cajicá -->
-            <div class="sede-card">
-                <div class="sede-image"><img src="Imagenes/Sedes_cajica.png" alt="sede_100"></div>
-                <div class="sede-info">
-                    <h2 class="sede-title">Sede Cajicá</h2>
-                    <small class="sede-address">Kilómetro 2, Vía Cajicá - Zipaquirá</small>
-                    <div class="sede-actions">
-                        <a href="sedes.html" class="sede-link">Ver sede</a>
-                        <a href="#" class="sede-btn">¡Inscribirme ahora!</a>
-                    </div>
+
+            <div class="plan-card">
+                <p class="subtitulos">Platino</p>
+                <div class="precio-contenedor">
+                    <span class="precios">$250.000</span>
+                    <span class="texto-planes">/mes</span>
                 </div>
-            </div>
-            <!-- Sede Hospital Militar -->
-            <div class="sede-card">
-                <div class="sede-image"><img src="Imagenes/Sedes_hospital.png" alt="sede_100"></div>
-                <div class="sede-info">
-                    <h2 class="sede-title">Sede Hospital Militar</h2>
-                    <small class="sede-address">Transversal 3 #49 - 00. Bogotá</small>
-                    <div class="sede-actions">
-                        <a href="sedes.html" class="sede-link">Ver sede</a>
-                        <a href="#" class="sede-btn">¡Inscribirme ahora!</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Sede Distrital -->
-            <div class="sede-card">
-                <div class="sede-image"><img src="Imagenes/Sedes_distrital.png" alt="sede_100"></div>
-                <div class="sede-info">
-                    <h2 class="sede-title">Sede Distrital</h2>
-                    <small class="sede-address">Calle 13 #31 - 75. Bogotá</small>
-                    <div class="sede-actions">
-                        <a href="sedes.html" class="sede-link">Ver sede</a>
-                        <a href="#" class="sede-btn">¡Inscribirme ahora!</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Sede Nacional -->
-            <div class="sede-card">
-                <div class="sede-image"><img src="Imagenes/Sede=Nacional.png" alt="sede_100"></div>
-                <div class="sede-info">
-                    <h2 class="sede-title">Sede Nacional</h2>
-                    <small class="sede-address">Cra. 45 #26 - 85</small>
-                    <div class="sede-actions">
-                        <a href="sedes.html" class="sede-link">Ver sede</a>
-                        <a href="#" class="sede-btn">¡Inscribirme ahora!</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Sede Cundinamarca -->
-            <div class="sede-card">
-                <div class="sede-image"><img src="Imagenes/Sede=Cundinamarca.png" alt="sede_100"></div>
-                <div class="sede-info">
-                    <h2 class="sede-title">Sede Cundinamarca</h2>
-                    <small class="sede-address">Autopista Chía - Cajicá.</small>
-                    <div class="sede-actions">
-                        <a href="sedes.html" class="sede-link">Ver sede</a>
-                        <a href="#" class="sede-btn">¡Inscribirme ahora!</a>
-                    </div>
-                </div>
+                <p class="textos2">Facturado Mensualmente</p>
+                <hr class="divisora">
+                <div class="beneficios">
+                    <ul>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Acceso ilimitado a todas las sedes</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Entrena con 10 amigos al mes</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Reserva hasta 10 clases a la semana</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Plan de entrenamiento completo</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Preguntas ilimitadas al coach</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Fitness Plus App | Rutinas</li>
+                        <li><img src="images/check.svg" alt="check" loading="lazy">Acceso a todas las áreas de la sede</li>
+                    </ul>
+                </div>    
+                <button class="boton-cta2">Iniciar Sesión</button>
             </div>
         </div>
     </section>
 
-    <section class="class-schedule" id="clases">
-        <div class="class-header">
-            <h1>Horario de clases grupales</h1>
-            <p>Aquí puedes reservar la clase de tu preferencia 🕺 💃</p>
+    <section>
+        <div class="titulos-secciones2">
+            <h2 class="titulos-principales">¿Dónde quieres entrenar?</h2>
+            <p class="sub-texto">Recuerda que nuestro plan más básico te ofrece acceso a dos sedes 😎</p>
+        </div>  
+        
+        <div class="grid-container">
+                <div class="card-sede-wrapper">
+                    <div class="imagen-sede-wrapper"> 
+                        <img src="images/sede_cien.webp" alt="Sede Calle 100" class="imagen-sede" loading="lazy">  
+                    </div>
+                    <div class="card-sede">
+                        <h3 class="subtitulos">Sede Calle 100</h3>
+                        <h4 class="sub-texto2">Universidad Militar Nueva Granada</h4>
+                        <p class="textos2">Cra. 11 #101 - 80. Bogotá</p>
+                        <a href="#" class="boton-sede">Ver sede <img src="images/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                    </div>
+                </div>
+                <div class="card-sede-wrapper">
+                    <div class="imagen-sede-wrapper"> 
+                        <img src="images/sede_cajica.webp" alt="Sede Cajicá" class="imagen-sede" loading="lazy">  
+                    </div>
+                    <div class="card-sede">
+                        <h3 class="subtitulos">Sede Cajicá</h3>
+                        <h4 class="sub-texto2">Universidad Militar Nueva Granada</h4>
+                        <p class="textos2">Kilómetro 2, Vía Cajicá - Zipaquirá</p>
+                        <a href="#" class="boton-sede">Ver sede <img src="images/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                    </div>
+                </div>
+
+                <div class="card-sede-wrapper">
+                    <div class="imagen-sede-wrapper"> 
+                        <img src="images/sede_hospital.webp" alt="Sede Hospital Militar" class="imagen-sede" loading="lazy">  
+                    </div>
+                    <div class="card-sede">
+                        <h3 class="subtitulos">Sede Hospital Militar</h3>
+                        <h4 class="sub-texto2">Universidad Militar Nueva Granada</h4>
+                        <p class="textos2">Transversal 3 #49 - 00. Bogotá</p>
+                        <a href="#" class="boton-sede">Ver sede <img src="images/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                    </div>
+                </div>
+
+                <div class="card-sede-wrapper">
+                    <div class="imagen-sede-wrapper"> 
+                        <img src="images/sede_distrital.webp" alt="Sede Distrital" class="imagen-sede" loading="lazy">  
+                    </div>
+                    <div class="card-sede">
+                        <h3 class="subtitulos">Sede Distrital</h3>
+                        <h4 class="sub-texto2">Universidad Distrital F. José de Caldas</h4>
+                        <p class="textos2">Calle 13 #31 - 75. Bogotá</p>
+                        <a href="#" class="boton-sede">Ver sede <img src="images/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                    </div>
+                </div>
+
+                <div class="card-sede-wrapper">
+                    <div class="imagen-sede-wrapper"> 
+                        <img src="images/sede_nacional.webp" alt="Sede Universidad Nacional" class="imagen-sede" loading="lazy">  
+                    </div>
+                    <div class="card-sede">
+                        <h3 class="subtitulos">Sede Nacional</h3>
+                        <h4 class="sub-texto2">Universidad Nacional de Colombia</h4>
+                        <p class="textos2">Cra. 45 #26 - 85. Bogotá</p>
+                        <a href="#" class="boton-sede">Ver sede <img src="images/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                    </div>
+                </div>
+
+                <div class="card-sede-wrapper">
+                    <div class="imagen-sede-wrapper"> 
+                        <img src="images/sede_cundinamarca.webp" alt="Sede Cundinamarca" class="imagen-sede" loading="lazy">  
+                    </div>
+                    <div class="card-sede">
+                        <h3 class="subtitulos">Sede Cundinamarca</h3>
+                        <h4 class="sub-texto2">Universidad de Cundinamarca</h4>
+                        <p class="textos2">Autopista Chía - Cajicá.</p>
+                        <a href="#" class="boton-sede">Ver sede <img src="images/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                    </div>
+                </div>
+        </div>  
+    </section>
+
+
+    <section>
+        <div class="titulos-secciones2">
+            <h2 class="titulos-principales">Horario de clases grupales</h2>
+            <p class="sub-texto">Aquí puedes reservar la clase de tu preferencia 🕺 💃</p>
+        </div>  
+
+        <div class="dias">
+            <div class="cuadro-fecha">
+                <div class="subtitulos">2</div>
+                <div class="texto-fecha">Lun</div>
+            </div>
+
+            <div class="cuadro-fecha">
+                <div class="subtitulos">3</div>
+                <div class="texto-fecha">Mar</div>
+            </div>
+
+            <div class="cuadro-fecha">
+                <div class="subtitulos">4</div>
+                <div class="texto-fecha">Mié</div>
+            </div>
+
+            <div class="cuadro-fecha">
+                <div class="subtitulos">5</div>
+                <div class="texto-fecha">Jue</div>
+            </div>
+
+            <div class="cuadro-fecha">
+                <div class="subtitulos">6</div>
+                <div class="texto-fecha">Vie</div>
+            </div>
+
+            <div class="cuadro-fecha">
+                <div class="subtitulos">7</div>
+                <div class="texto-fecha">Sáb</div>
+            </div>
+
+            <div class="cuadro-fecha">
+                <div class="subtitulos">8</div>
+                <div class="texto-fecha">Dom</div>
+            </div>
         </div>
-        <div class="weekdays-container">
-            <div class="weekday active">
-                <div class="weekday-number">2</div>
-                <div class="weekday-name">Lun</div>
-            </div>
-            <div class="weekday">
-                <div class="weekday-number">3</div>
-                <div class="weekday-name">Mar</div>
-            </div>
-            <div class="weekday">
-                <div class="weekday-number">4</div>
-                <div class="weekday-name">Mié</div>
-            </div>
-            <div class="weekday">
-                <div class="weekday-number">5</div>
-                <div class="weekday-name">Jue</div>
-            </div>
-            <div class="weekday">
-                <div class="weekday-number">6</div>
-                <div class="weekday-name">Vie</div>
-            </div>
-            <div class="weekday">
-                <div class="weekday-number">7</div>
-                <div class="weekday-name">Sáb</div>
-            </div>
-            <div class="weekday">
-                <div class="weekday-number">8</div>
-                <div class="weekday-name">Dom</div>
-            </div>
-        </div>
-        <div class="clases">
-            <div class="class-container">
-                <div class="class-time">7:00 a.m</div>
-                <div class="class-card">
-                    
-                    <div class="class-title">Cycling</div>
-                    <div class="class-instructor">Néstor Alfaro</div>
+
+        <div class="contenedor-princ-clases">
+
+            <div class="contenedor-clases">
+                <p class="sub-texto2">7:00 a.m.</p>
+                <div class="card-clases">
+                    <img src="images/cycling.svg" alt="Cycling" class="iconos" loading="lazy">
+                    <div class="contenido-clases">
+                        <h3 class="sub-texto2">Cycling</h3>
+                        <p class="textos1">Néstor Alfaro</p>
+                    </div>
                 </div>
-                <a href="clases.html"><div class="reserve-btn">Reservar clase</div></a>
+                <button class="boton-cta3">Reservar Clase</button>
             </div>
-            <div class="class-container">
-                <div class="class-time">9:00 a.m</div>
-                <div class="class-card">
-                    <div class="class-title">Boxeo</div>
-                    <div class="class-instructor">Diana Cadavid</div>
+
+            <div class="contenedor-clases">
+                <p class="sub-texto2">9:00 a.m.</p>
+                <div class="card-clases">
+                    <img src="images/boxeo.svg" alt="Boxeo" class="iconos" loading="lazy">
+                    <div class="contenido-clases">
+                        <h3 class="sub-texto2">Boxeo</h3>
+                        <p class="textos1">Diana Cadavid</p>
+                    </div>
                 </div>
-                <a href="clases.html"><div class="reserve-btn">Reservar clase</div></a>
+                <button class="boton-cta3">Reservar Clase</button>
             </div>
-            <div class="class-container">
-                <div class="class-time">11:00 a.m</div>
-                <div class="class-card">
-                    <div class="class-title">Funcional</div>
-                    <div class="class-instructor">Pibe González</div>
+
+            <div class="contenedor-clases">
+                <p class="sub-texto2">11:00 a.m.</p>
+                <div class="card-clases">
+                    <img src="images/funcional.svg" alt="Funcional" class="iconos" loading="lazy">
+                    <div class="contenido-clases">
+                        <h3 class="sub-texto2">Funcional</h3>
+                        <p class="textos1">Pibe González</p>
+                    </div>
                 </div>
-                <a href="clases.html"><div class="reserve-btn">Reservar clase</div></a>
+                <button class="boton-cta3">Reservar Clase</button>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="newsletter-content">
-            <h1 class="newsletter-title">Suscríbete a nuestro boletín</h1>
-            <h2 class="newsletter-subtitle">Tendrás acceso a todas nuestras promociones mensuales 😎</h2>
-            <div class="subscription-box">
-                <div class="email-input-container">
-                    <input type="text" class="email-input-text" placeholder="Escribe tu correo">
-                </div>
-                <p class="subscribe-btn">Suscribirse</p>
+    <section>
+        <div class="contenedor-gris">
+            <div class="contenedor-verde">
+                <h3 class="titulos-principales">Suscríbete a nuestro boletín</h3>
+                <p class="titulos2">Tendrás acceso a todas nuestras promociones mensuales 😎</p>
+                <form class="formulario">
+                    <div class="input-contenedor">
+                        <img src="images/correo.svg" alt="Icono de Correo" class="iconos2" loading="lazy">
+                        <input type="email" placeholder="Escribe tu correo" class="input-correo" required>
+                        <button type="submit" class="boton-suscribirse">Suscribirse</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </section>
+
+    <footer class="contenedor-gris2">
+        <div class="contenedor-interno">
+            <!-- Columna izquierda: Logo e información de contacto -->
+            <div class="contenedor-izquierda">
+                <img src="images/logo2.svg" alt="Logo" class="logo2">
+                    <div class="informacion-contacto">
+                        <div class="contacto-item">
+                            <img src="images/correo2.svg" alt="Icono Correo" class="iconos3">
+                            <p class="sub-texto3">hola@fitnessplus.com</p>
+                        </div>
+                        <div class="contacto-item">
+                            <img src="images/telefono.svg" alt="Icono Teléfono" class="iconos3">
+                            <p class="sub-texto3">+57 300 245 4612</p>
+                        </div>
+                        <div class="contacto-item">
+                            <img src="images/direccion.svg" alt="Icono Dirección" class="iconos3">
+                            <p class="sub-texto3">Calle 93 #18 - 65</p>
+                        </div>
+                    </div>
+                    <div class="redes-sociales">
+                        <img src="images/twitter.svg" alt="Twitter" class="icono-red">
+                        <img src="images/linkedin.svg" alt="LinkedIn" class="icono-red">
+                        <img src="images/facebook.svg" alt="Facebook" class="icono-red">
+                        <img src="images/instagram.svg" alt="Instagram" class="icono-red">
+                    </div>
+            </div>
     
-        
-        <div class="footer-container">
-            <div class="footer-info">
-                <div class="footer-logo">
-                    <div class="logo-part1"></div>
-                    <div class="logo-part2"></div>
-                </div>
-                <div class="footer-contact">
-                    <div class="contact-item">
-                        <div class="contact-text">hola@fitnessplus.com</div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-text">+57 300 245 4612</div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-text">Calle 93 #18 - 65</div>
-                    </div>
-                </div>
-                <div class="footer-social">
-                    <div class="icon-social1"></div>
-                    <div class="icon-social2"></div>
-                    <div class="icon-social3"></div>
-                    <div class="icon-social4"></div>
-                </div>
-            </div>
-            <div class="footer-callout">
-                <div class="callout-box">
-                    <div class="callout-title">¿Qué esperas para entrenar?</div>
-                    <div class="callout-subtitle">Somos el único gimnasio con coach personalizado 1 a 1 en todos nuestros planes 😎</div>
-                </div>
+            <div class="contenedor-derecha">
+                <h1 class="precios">¿Qué esperas para entrenar?</h1>
+                <p class="sub-texto2">Somos el único gimnasio con coach personalizado 1 a 1 en todos nuestros planes 😎</p>
             </div>
         </div>
     </footer>
