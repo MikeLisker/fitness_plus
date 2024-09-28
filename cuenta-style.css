@@ -62,17 +62,6 @@ a:hover {
 }
   
   /* Header Styles */
-header {
-    width: 100%;
-    height: 94px;
-    
-    background-color:#EBFD01;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    
-}
 
 
 li {
@@ -98,93 +87,107 @@ span{
   font-weight: bold;
 }
   
+
+
+/* Colores */
+:root {
+  --color-verde: #EBFD01;
+  --color-gris: #18191E;
+  --color-gris2: #F5F5F5;
+  --color-titulos: #1A1A1A;
+  --color-texto: #1F1F1F;
+  --color-texto2: #656565;
+  --color-iconos: #6C6C6C;
+  --color-inputs: #E0E0E0;
+  --color-blanco:#fff;
+  --color-negro:#000;
+}
+
+
+/* Estilo base para el botón "Iniciar Sesión" */
+.boton-iniciar-sesion {
+  background-color: var(--color-gris);
+  color: var(--color-blanco); /* Texto */
+  padding: 12px 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.4s ease; /* Transición suave */
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+/* Efecto hover para el botón "Iniciar Sesión" */
+.boton-iniciar-sesion:hover {
+  background-color:var(--color-blanco);
+  color: var(--color-gris);
+}
+
+
+
+.container {
+ /* Ancho del contenido */
+  margin: 0 auto;  /* Centra el contenido */
+  padding: 0 120px; /* Márgenes laterales de 120px */
+}
+
+header {
+  padding: 20px 0;
+  background-color:var(--color-verde);
+}
+
+.logo {
+  display: block;
+}
+
+.logo-img {
+  width: 15rem;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Container para alinear el contenido */
 .header-container {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #EBFD01;
-}
-  
-  /* Logo Section */
-.frame82 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-  
-.logo2 {
-    width: 95px;
-    height: 50px;
-    
-}
-  
-.vector {
-    background: white;
-    position: absolute;
-}
-  
-  
-  /* Text Section */
-.frame81 {
-    padding: 10px;
-}
-  
-.tu-cuenta {
-    color:#1A1A1A;
-    font-size: 28px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    line-height: 44px;
-}
-  
-  /* Menu Section */
-.menu {
-    display: flex;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #18191E;
-}
-  
-.menu-item {
-    padding: 12px;
-    display: flex;
-    align-items: center;
-}
-  
-/* Button */
-.boton-app {
-    padding: 10px 106px;
-    width: 10%;
-    background:#1A1A1A;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px; /* Márgenes laterales*/
 }
 
-.boton-app h2 {
-    color:#E0E0E0;
-    font-size: 18px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    
+/* Estilos para el menú de navegación */
+.nav-menu {
+  color: var(--color-gris);
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 2rem; /* Espacio entre los enlaces */
 }
 
-.boton-app:hover, .boton-app:hover h2 {
-    background: #717900;
-    color: #f1f1f1;
+.nav-menu a {
+  position: relative;
+  color: var(--color-gris);
+  font-size: 1.6rem; /* 16px */
+  font-weight: 600; /* Semi-bold */
+  text-decoration: none;
+  border-bottom: 0.2rem solid transparent; /* Sin línea al inicio */
+  transition: border-bottom 0.3s ease; /* Transición suave para la línea */
 }
-  
-.iniciar-sesion {
-    color: #1F1F1F;
-    font-size: 18px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+
+.nav-menu a:hover {
+  border-bottom: 0.2rem solid var(--color-gris);
 }
+
+
+
+
+
+
+
+
+
   /* Cuenta Info Section */
 .cuenta-info {
     width: 100%;
