@@ -426,7 +426,7 @@ ul {
   }
   
   .overlay-message {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -435,9 +435,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s ease;
   }
   
   /* Contenedor del mensaje */
@@ -507,15 +504,7 @@ ul {
   }
   
   /* Animaciones para mostrar el overlay */
-  .overlay-message.show {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  #messageOverley:hover + .overlay-message {
-    visibility: visible;
-    opacity: 1;
-  }
+  
 
 footer {
     width: 100%;

@@ -130,9 +130,21 @@
                   <h3>Cycling</h3>
                   <p>Néstor Alfaro</p>
                 </div>
-                <div class="boton-reservar">
+                <div class="boton-reservar" id="showOverlay">
                   <button>Reservar clase</button>
                 </div>
+                <div class="overlay-message" id="overlayElement">
+                  <div class="message-container">
+                    <div class="check-circle">
+                      <div class="check-box"></div>
+                    </div>
+                    <div class="message-text">Tu clase fue reservada<br>con éxito</div>
+                    <div class="button-container">
+                      <button class="accept-button" id="closeOverlay">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+                <script src="script.js"></script>
               </div>
           
               <!-- Clase Boxeo -->
@@ -142,19 +154,8 @@
                   <h3>Boxeo</h3>
                   <p>Diana Cadavid</p>
                 </div>
-                <div class="boton-reservar">
+                <div class="boton-reservar" class="showOverlay">
                   <button>Reservar clase</button>
-                  <div class="overlay-message" id="messageOverlay">
-                    <div class="message-container">
-                      <div class="check-circle">
-                        <div class="check-box"></div>
-                      </div>
-                      <div class="message-text">Tu clase fue reservada<br>con éxito</div>
-                      <div class="button-container">
-                        <button class="accept-button">Aceptar</button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
           
@@ -165,10 +166,11 @@
                   <h3>Funcional</h3>
                   <p>Pibe González</p>
                 </div>
-                <div class="boton-reservar">
+                <div class="boton-reservar" class="showOverlay">
                   <button>Reservar clase</button>
                 </div>
               </div>
+
             </div>
         </div>
     </section>
