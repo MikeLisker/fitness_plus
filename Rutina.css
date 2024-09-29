@@ -123,3 +123,15 @@ body{
   footer{
     display: flex;
   }
+
+  #back-arrow{
+    width: 30px;
+    height: 30px;
+    rotate: 180deg;
+    cursor: pointer;
+  }
+
+  #rutina-title-container{
+    display: flex;
+    flex-direction: row;
+  }
