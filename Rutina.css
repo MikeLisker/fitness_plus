@@ -1,0 +1,79 @@
+.hero {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido {
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .cont-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 60%;
+  }
+  
+  .muscular {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    max-width: 200px;
+    background-color: white;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 10px;
+    gap: 20px;
+  }
+  .cont-bot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .ejerci {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
+  }
+  .ejerci h4 {
+    font-size: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .img-ejerci {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .img-ejerci img {
+    max-width: 100%;
+    height: 150px;
+  }
+  .cantidad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .cantidad p {
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+  }
+  .descripcion {
+    padding: 10px;
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 10px;
+  }
