@@ -4,14 +4,15 @@ body{
     color: #1F1F1F;
     padding: 0;
     margin: 0;
-    width: 1920px;
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
     overflow-x: hidden;
-    gap: 91px;
+
 }
 
 * {
@@ -218,6 +219,7 @@ ul {
     align-items: center;
     gap: 33px;
     text-align: left;
+    margin: 20px 0; 
 }
 
 .titulo-clases {
@@ -324,6 +326,7 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 38px;
+    margin: 20px 0;
   }
   
   .reservas-header h2 {

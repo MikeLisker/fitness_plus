@@ -1,6 +1,7 @@
 /* Base */
 html {
     font-size: 10px; /* Base de 10px */
+    scroll-behavior: smooth;
 }
 
 * {
@@ -12,6 +13,11 @@ html {
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: none;
 }
 
 /* Contenedor general */

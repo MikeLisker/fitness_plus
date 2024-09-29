@@ -6,23 +6,24 @@
     <title>Fitness Plus 🏋️‍♂️ - El único gimnasio donde tienes coach personalizado 1 a 1</title>
     <link rel="stylesheet" href="mainstyle.css">
     <link rel="icon" href="Imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
         <div class="container header-container">
 
-            <a href="/" class="logo">
+            <a href="loggedin.html" class="logo">
                 <img src="Vectores/logo.svg" alt="Fitness Plus Logo" class="logo-img">
             </a>
     
             <nav class="nav-menu">
-                <a href="#">Sedes</a>
-                <a href="#">Planes</a>
-                <a href="#">Clases</a>
+                <a href="#planes">Planes</a>
+                <a href="#sedes">Sedes</a>
+                <a href="#clases">Clases</a>
             </nav>
     
-            <a href="#" class="boton-iniciar-sesion">Cuenta</a>
+            <a href="cuenta.html" class="boton-iniciar-sesion">Cuenta</a>
         </div>
     </header>
 
@@ -47,7 +48,7 @@
     </section>
 
     <section>
-        <div class="titulos-secciones">
+        <div class="titulos-secciones" id="planes">
             <h2 class="titulos-principales">Elige tu plan y entrena ya</h2>
             <p class="sub-texto ">Encuentra el plan perfecto para tus objetivos y comienza tu transformación hoy mismo.<p/>
         </div>
@@ -79,7 +80,7 @@
                         <li><img src="Vectores/check.svg" alt="check" loading="lazy">Acceso a todas las áreas de la sede</li>
                     </ul>
                 </div>    
-                <button class="boton-cta2">Iniciar Sesión</button>
+                <button class="boton-cta2"><a href="">Ver Plan</a></button>
             </div>
 
             
@@ -104,7 +105,7 @@
                             <li><img src="Vectores/check.svg" alt="check" loading="lazy">Acceso a todas las áreas de la sede</li>
                         </ul>
                     </div>    
-                    <button class="boton-cta2">Iniciar Sesión</button>
+                    <button class="boton-cta2"><a href="">Ver Plan</a></button>
                 </div>    
             </div>
 
@@ -127,13 +128,13 @@
                         <li><img src="Vectores/check.svg" alt="check" loading="lazy">Acceso a todas las áreas de la sede</li>
                     </ul>
                 </div>    
-                <button class="boton-cta2">Iniciar Sesión</button>
+                <button class="boton-cta2"><a href="">Ver Plan</a></button>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="titulos-secciones2">
+        <div class="titulos-secciones2" id="sedes">
             <h2 class="titulos-principales">¿Dónde quieres entrenar?</h2>
             <p class="sub-texto">Recuerda que nuestro plan más básico te ofrece acceso a dos sedes 😎</p>
         </div>  
@@ -147,8 +148,8 @@
                         <h3 class="subtitulos">Sede Calle 100</h3>
                         <h4 class="sub-texto2">Universidad Militar Nueva Granada</h4>
                         <p class="textos2">Cra. 11 #101 - 80. Bogotá</p>
-                        <a href="#" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
-                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                        <a href="sedes2.html" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        
                     </div>
                 </div>
                 <div class="card-sede-wrapper">
@@ -159,8 +160,8 @@
                         <h3 class="subtitulos">Sede Cajicá</h3>
                         <h4 class="sub-texto2">Universidad Militar Nueva Granada</h4>
                         <p class="textos2">Kilómetro 2, Vía Cajicá - Zipaquirá</p>
-                        <a href="#" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
-                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                        <a href="sedes2.html" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        
                     </div>
                 </div>
 
@@ -172,8 +173,8 @@
                         <h3 class="subtitulos">Sede Hospital Militar</h3>
                         <h4 class="sub-texto2">Universidad Militar Nueva Granada</h4>
                         <p class="textos2">Transversal 3 #49 - 00. Bogotá</p>
-                        <a href="#" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
-                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                        <a href="sedes2.html" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        
                     </div>
                 </div>
 
@@ -185,8 +186,8 @@
                         <h3 class="subtitulos">Sede Distrital</h3>
                         <h4 class="sub-texto2">Universidad Distrital F. José de Caldas</h4>
                         <p class="textos2">Calle 13 #31 - 75. Bogotá</p>
-                        <a href="#" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
-                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                        <a href="sedes2.html" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        
                     </div>
                 </div>
 
@@ -198,8 +199,8 @@
                         <h3 class="subtitulos">Sede Nacional</h3>
                         <h4 class="sub-texto2">Universidad Nacional de Colombia</h4>
                         <p class="textos2">Cra. 45 #26 - 85. Bogotá</p>
-                        <a href="#" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
-                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                        <a href="sedes2.html" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        
                     </div>
                 </div>
 
@@ -211,8 +212,8 @@
                         <h3 class="subtitulos">Sede Cundinamarca</h3>
                         <h4 class="sub-texto2">Universidad de Cundinamarca</h4>
                         <p class="textos2">Autopista Chía - Cajicá.</p>
-                        <a href="#" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
-                        <button class="boton-cta2">¡Inscribirme ahora!</button>
+                        <a href="sedes2.html" class="boton-sede">Ver sede <img src="Vectores/angle.svg" alt="icono" class="icono-angle" loading="lazy"></a>
+                        
                     </div>
                 </div>
         </div>  
@@ -220,7 +221,7 @@
 
 
     <section>
-        <div class="titulos-secciones2">
+        <div class="titulos-secciones2" id="clases">
             <h2 class="titulos-principales">Horario de clases grupales</h2>
             <p class="sub-texto">Aquí puedes reservar la clase de tu preferencia 🕺 💃</p>
         </div>  
@@ -273,7 +274,7 @@
                         <p class="textos1">Néstor Alfaro</p>
                     </div>
                 </div>
-                <button class="boton-cta3">Reservar Clase</button>
+                <button class="boton-cta3"><a href="clases2.html">Reservar Clase</a></button>
             </div>
 
             <div class="contenedor-clases">
@@ -285,7 +286,7 @@
                         <p class="textos1">Diana Cadavid</p>
                     </div>
                 </div>
-                <button class="boton-cta3">Reservar Clase</button>
+                <button class="boton-cta3"><a href="clases2.html">Reservar Clase</a></button>
             </div>
 
             <div class="contenedor-clases">
@@ -297,7 +298,7 @@
                         <p class="textos1">Pibe González</p>
                     </div>
                 </div>
-                <button class="boton-cta3">Reservar Clase</button>
+                <button class="boton-cta3"><a href="clases2.html">Reservar Clase</a></button>
             </div>
         </div>
     </section>
