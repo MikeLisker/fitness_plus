@@ -55,6 +55,20 @@ body{
     border-radius: 10px;
     gap: 20px;
   }
+
+  .muscular.active{
+    box-shadow: 0 0 10px 0 rgb(217, 255, 0);
+  }
+
+  .muscular:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .muscular.active:hover {
+    box-shadow: 0 0 10px 0 rgb(100, 117, 0);
+  }
+
   .cont-bot {
     display: flex;
     flex-direction: row;
