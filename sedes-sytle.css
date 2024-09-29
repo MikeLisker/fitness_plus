@@ -215,6 +215,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 38px;
+    margin: 20px 0;
 }
   
 .sede-title-container {
@@ -398,12 +399,13 @@ img {
 
 .otras-sedes-container {
     width: 60%;
-    max-width: 1920px;
+
     display: flex;
     flex-direction: column;
     align-content: center;
     gap: 41px;
     justify-content: center;
+    margin: 20px 0;
 }
   
 .otras-sedes-titulo h2 {
@@ -418,6 +420,7 @@ img {
     width: 100%;
     display: flex;
     align-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 58px;
 }
@@ -532,6 +535,7 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 22px;
+    z-index: 1;
 }
   /* Tarjeta de horario */
   .horario-card {
@@ -600,9 +604,8 @@ img {
   }
   
   .icon {
-    width: 27px;
+    width: 32px;
     height: 32px;
-    background: url('Vectores/icono-reloj-negro.svg');
   }
 
 .frame-cajica {
@@ -683,15 +686,9 @@ img {
     color: black;
   }
   
-  .icon {
-    width: 27px;
-    height: 32px;
-    background: url('Vectores/icono-reloj-negro.svg');
-  }
 
 footer {
     width: 100%;
-    max-width: 1920px;
     padding: 36px 120px 67px 120px;
     background-color: #18191E;
     display: flex;
@@ -764,26 +761,25 @@ footer {
     gap: 24px;
   }
   
-  .icon {
-    width: 24px;
-    height: 24px;
-    
-  }
   
 .icon.twitter {
     background-image: url('Vectores/icono-Twitter.svg');
+    background-size: cover;
 }
 
 .icon.facebook {
     background-image: url('Vectores/icono-Facebook.svg');
+    background-size: cover;
 }
 
 .icon.instagram {
     background-image: url('Vectores/icono-Instagram.svg');
+    background-size: cover;
 }
 
 .icon.linkedin {
     background-image: url('Vectores/icono-LinkedIn.svg');
+    background-size: cover;
 }
   
   /* CTA Section */
