@@ -272,7 +272,7 @@ header {
     border: none;
     outline: none;
     width: 100%;
-
+    text-align: center;
 }
 
 /* Efecto hover para el botón "Iniciar Sesión" */
