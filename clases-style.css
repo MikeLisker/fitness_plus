@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+
 body{
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
@@ -5,7 +10,7 @@ body{
     padding: 0;
     margin: 0;
     width: 100%;
-
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +19,7 @@ body{
     overflow-x: hidden;
 
 }
+
 
 * {
     margin: 0;
@@ -62,8 +68,7 @@ a {
   
   /* Header Styles */
 header {
-    width: 1920px;
-    max-width: 1920px;
+    width: 100%;
     height: 94px;
     padding: 55px 82px;
     background-color:#EBFD01;
@@ -323,7 +328,8 @@ ul {
     max-width: 1220px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-items: center;
+    align-content: center;
     gap: 38px;
     margin: 20px 0;
   }
@@ -353,8 +359,13 @@ ul {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     border: 1px solid #E0E0E0;
+    cursor: pointer;
   }
   
+  .fecha-card:hover {
+    background: #f1f1f1; ;
+  }
+
   .fecha-card.active {
     border-color: #18191E;
   }
@@ -425,16 +436,19 @@ ul {
     background-color: #333;
   }
   
-  .overlay-message {
-    position: absolute;
+  /* Overlay de fondo */
+  .overlay-background {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    display: none;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    z-index: 99; /* Asegura que esté detrás del mensaje */
+    display: none; /* Oculto por defecto */
   }
   
   /* Contenedor del mensaje */
@@ -448,6 +462,7 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    z-index: 100;
   }
   
   /* Círculo del check */
@@ -507,7 +522,7 @@ ul {
 
 footer {
     width: 100%;
-    max-width: 1920px;
+    height: 100%;
     padding: 36px 120px 67px 120px;
     background-color: #18191E;
     display: flex;
@@ -646,4 +661,132 @@ footer {
     height: 30px;
     rotate: 180deg;
     cursor: pointer;
+  }
+
+  #section-hide{
+    display: none;
+    background-color: #f1f1f1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) and (max-height: 1024px) {
+
+    body{
+      width: 100%;
+      height: 100%;
+    }
+    header {
+      padding: 20px 20px;
+    }
+    footer{
+      height: 100%;
+    }
+  
+    .header-container {
+      flex-direction: column;
+ 
+    }
+  
+    .frame82 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .menu-item {
+      padding: 10px;
+    }
+  
+    .menu-text {
+      font-size: 20px;
+    }
+  
+    .botones-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .boton-app {
+      padding: 10px 20px;
+    }
+  
+    .iniciar-sesion {
+      font-size: 16px;
+    }
+  
+    .tus-clases-container {
+      gap: 20px;
+    }
+  
+    .titulo-clases h2 {
+      font-size: 36px;
+    }
+  
+    .tu-clase-card {
+      width: 100%;
+    }
+  
+    .clase-info h3 {
+      font-size: 16px;
+    }
+  
+    .clase-info p {
+      font-size: 8px;
+    }
+  
+    .clase-details {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .clase-date, .clase-time {
+      font-size: 16px;
+    }
+  
+    .agregar-clase-card {
+      width: 100%;
+    }
+  
+    .agregar-clase-card p {
+      font-size: 16px;
+    }
+  
+    .reservas-container {
+      gap: 20px;
+    }
+  
+    .reservas-header h2 {
+      font-size: 36px;
+    }
+  
+    .fechas-semana {
+      gap: 20px;
+      padding: 0 20px;
+    }
+  
+    .fecha-card {
+      width: 60px;
+      height: 56px;
+    }
+  
+    .dia-numero {
+      font-size: 24px;
+    }
+  
+    .dia-texto {
+      font-size: 12px;
+    }
+  
+    .clases-disponibles {
+      gap: 20px;
+      padding: 0 20px;
+    }
+  
+  
   }

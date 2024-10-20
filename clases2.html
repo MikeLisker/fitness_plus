@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="clases-style.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Imagenes/favicon.png" type="image/png">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -27,7 +28,7 @@
     </div>
 </header>
 
-    <section>
+<section>
         <div class="tus-clases-container">
             <div class="titulo-clases">
               <a href="javascript:history.back()"><img src="Vectores/arrow_forward_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="back-arrow" id="back-arrow"></a>
@@ -76,14 +77,14 @@
           
               <!-- Agregar Clase -->
               <a href="#clases">
-                <div class="agregar-clase-card"><p>Agregar clases +</p></div>
+                <div class="agregar-clase-card" id="show-section"><p>Agregar clases +</p></div>
               </a>
               
             </div>
           </div>
-    </section>
+</section>
 
-    <section>
+<section id="section-hide">
         <div class="reservas-container" id="clases">
             <div class="reservas-header">
               <h2>Reserva tus Clases</h2>
@@ -91,53 +92,48 @@
             
             <!-- Fechas de la semana -->
             <div class="fechas-semana">
-              <div class="fecha-card active">
+              <button class="fecha-card active">
                 <span class="dia-numero">2</span>
                 <span class="dia-texto">Lun</span>
-              </div>
-              <div class="fecha-card">
+              </button>
+              <button class="fecha-card">
                 <span class="dia-numero">3</span>
                 <span class="dia-texto">Mar</span>
-              </div>
-              <div class="fecha-card">
+              </button>
+              <button class="fecha-card">
                 <span class="dia-numero">4</span>
                 <span class="dia-texto">Mié</span>
-              </div>
-              <div class="fecha-card">
+              </button>
+              <button class="fecha-card">
                 <span class="dia-numero">5</span>
                 <span class="dia-texto">Jue</span>
-              </div>
-              <div class="fecha-card">
+              </button>
+              <button class="fecha-card">
                 <span class="dia-numero">6</span>
                 <span class="dia-texto">Vie</span>
-              </div>
-              <div class="fecha-card">
+              </button>
+              <button class="fecha-card">
                 <span class="dia-numero">7</span>
                 <span class="dia-texto">Sáb</span>
-              </div>
-              <div class="fecha-card">
+              </button>
+              <button class="fecha-card">
                 <span class="dia-numero">8</span>
                 <span class="dia-texto">Dom</span>
-              </div>
+              </button>
             </div>
+           
           
             <!-- Clases disponibles -->
             <div class="clases-disponibles">
-              <!-- Clase Cycling -->
-              <div class="clase-card">
-                <div class="clase-hora">7:00 a.m</div>
-                <div class="clase-info">
-                  <h3>Cycling</h3>
-                  <p>Néstor Alfaro</p>
-                </div>
-                <div class="boton-reservar" id="showOverlay">
-                  <button>Reservar clase</button>
-                </div>
-                <div class="overlay-message" id="overlayElement">
+
+
+              <!-- Fondo oscuro -->
+              <div class="overlay-background" id="overlayElement">
+                <!-- Mensaje superpuesto -->
+                <div class="overlay-message">
                   <div class="message-container">
                     <div class="check-circle">
                       <img src="Vectores/icon-Check.svg" alt="check" width="80px" height="80px">
-                      
                     </div>
                     <div class="message-text">Tu clase fue reservada<br>con éxito</div>
                     <div class="button-container">
@@ -145,9 +141,18 @@
                     </div>
                   </div>
                 </div>
-                <script src="script.js"></script>
               </div>
-          
+              <!-- Clase Cycling -->
+              <div class="clase-card">
+                <div class="clase-hora">7:00 a.m</div>
+                <div class="clase-info">
+                  <h3>Cycling</h3>
+                  <p>Néstor Alfaro</p>
+                </div>
+                <div class="boton-reservar" class="showOverlay">
+                  <button class="showOverlay">Reservar clase</button>
+                </div>
+              </div>
               <!-- Clase Boxeo -->
               <div class="clase-card">
                 <div class="clase-hora">9:00 a.m</div>
@@ -155,26 +160,25 @@
                   <h3>Boxeo</h3>
                   <p>Diana Cadavid</p>
                 </div>
-                <div class="boton-reservar" class="showOverlay">
-                  <button>Reservar clase</button>
+                <div class="boton-reservar">
+                  <button class="showOverlay">Reservar clase</button>
                 </div>
               </div>
-          
-              <!-- Clase Funcional -->
-              <div class="clase-card">
-                <div class="clase-hora">11:00 a.m</div>
-                <div class="clase-info">
-                  <h3>Funcional</h3>
-                  <p>Pibe González</p>
+                <!-- Clase Funcional -->
+                <div class="clase-card">
+                  <div class="clase-hora">11:00 a.m</div>
+                  <div class="clase-info">
+                    <h3>Funcional</h3>
+                    <p>Pibe González</p>
+                  </div>
+                  <div class="boton-reservar">
+                    <button class="showOverlay">Reservar clase</button>
+                  </div>
                 </div>
-                <div class="boton-reservar" class="showOverlay">
-                  <button>Reservar clase</button>
-                </div>
-              </div>
-
             </div>
+  
         </div>
-    </section>
+  </section>
 
     <footer>
         <div class="info-contacto"></div>
@@ -214,6 +218,6 @@
         </div>
 
     </footer>
-    
+  <script src="script.js"></script>
 </body>
 </html>

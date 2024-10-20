@@ -1,0 +1,11 @@
+{
+    "2": [
+      { "nombre": "Cycling", "profesor": "Néstor Alfaro", "hora": "7:00 a.m", "fecha": "25/08" }
+    ],
+    "3": [
+      { "nombre": "Boxeo", "profesor": "Diana Cadavid", "hora": "9:00 a.m", "fecha": "28/08" }
+    ],
+    "4": [
+      { "nombre": "Funcional", "profesor": "Pibe González", "hora": "11:00 a.m", "fecha": "30/09" }
+    ]
+  }
