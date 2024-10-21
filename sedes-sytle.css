@@ -79,6 +79,13 @@ ul {
   gap: 30px;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .header-container {
     width: 70%;
     display: flex;
@@ -208,8 +215,6 @@ ul {
 /* Sede Section */
 .sede-principal-container {
     width: 100%;
-    max-width: 1920px;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,13 +243,13 @@ ul {
   
   /* Sede Card */
 .sede-principal-card {
-    width: 40%;
-    max-width: 1920px;
-    height: 690px;
     display: flex;
+    width: 40%;
+    height: 100%;
+   
     flex-direction: column;
     align-items: center;
-    position: relative;
+   
     background-color: white;
     border-radius: 10px;
     border: 1px solid #E0E0E0;
@@ -253,28 +258,21 @@ ul {
   /* Sede Image Overlay */
 .sede-image-overlay {
     width: 100%;
-    height: 409px;
+    height: 20%;
     border-radius: 10px;
-    position: absolute;
+   
     top: 0;
     left: 0;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
+
   
   /* Sede Information */
 .sede-info {
-    position: absolute;
-    top: 437px;
-    left: 27px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 10px 0;
 }
   
 .sede-name {
@@ -311,8 +309,7 @@ img {
   
   /* Sede Hours Card */
 .sede-hours-card {
-    position: relative;
-    left: 120px;
+    
     background-color: white;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -380,7 +377,6 @@ img {
 }
 
 .view-hours:hover .frame{
-    display: flex;
     color: #EBFD01;
 }
   
@@ -395,6 +391,13 @@ img {
     width: 26px;
     height: 30px;
     background-image: url("Vectores/Down_Arrow.svg");
+}
+
+.down-arrow-rotate{
+  width: 26px;
+  height: 30px;
+  background-image: url("Vectores/Down_Arrow.svg");
+  transform: rotate(90deg);
 }
 
 .otras-sedes-container {
@@ -426,8 +429,8 @@ img {
 }
   
 .sede-card {
-    width: 456px;
-    height: 633px;
+    width: 40%;
+    height: 100%;
     background: #fff;
     border-radius: 15px;
     border: 1px solid #E0E0E0;
@@ -457,6 +460,8 @@ img {
 .sede-content {
     padding: 23px 38px;
     text-align: left;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -525,17 +530,27 @@ img {
   /* Horario */
 
 .frame {
-    position: absolute;
-    left: 500px;
     width: 486px;
     padding: 37px 35px;
     background: rgba(224, 224, 224, 0.76);
     border-radius: 10px;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 22px;
-    z-index: 1;
+    display: none;
+}
+
+.frame-visible {
+  width: 486px;
+    padding: 37px 35px;
+    background: rgba(224, 224, 224, 0.76);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    display: flex;
 }
   /* Tarjeta de horario */
   .horario-card {

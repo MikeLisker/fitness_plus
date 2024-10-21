@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sectionHide = document.getElementById('section-hide');
 
   const showSection = document.getElementById('show-section');
+
   
   showSection.addEventListener('click', () => {  
     sectionHide.style.display = "flex";
@@ -45,8 +46,75 @@ document.addEventListener('DOMContentLoaded', () => {
     sectionHide.style.display = "none";
   });
 
-  
+  // Cargar JSON y agregar clases dinámicamente
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("clases.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const clases = data.clases;
+        mostrarClases(clases);
+        gestionarReservas(clases);
+      })
+      .catch((error) => console.error("Error al cargar JSON:", error));
+  });
 
+  function mostrarClases(clases) {
+    const listaClases = document.getElementById("listaClases");
 
-  
+    clases.forEach((clase) => {
+      const claseCard = document.createElement("div");
+      claseCard.classList.add("tu-clase-card");
+
+      claseCard.innerHTML = `
+        <div class="clase-info">
+          <h3>${clase.nombre}</h3>
+          <p>${clase.instructor}</p>
+        </div>
+        <div class="clase-details">
+          <span class="clase-date">${clase.fecha}</span>
+          <span class="clase-time">${clase.hora}</span>
+        </div>
+      `;
+      listaClases.appendChild(claseCard);
+    });
+  }
+
+  function gestionarReservas(clases) {
+    const botonesReservar = document.querySelectorAll(".showOverlay");
+    const overlay = document.getElementById("overlayElement");
+    const closeOverlay = document.getElementById("closeOverlay");
+
+    botonesReservar.forEach((boton, index) => {
+      boton.addEventListener("click", () => {
+        mostrarMensajeReserva(clases[index]);
+      });
+    });
+
+    closeOverlay.addEventListener("click", () => {
+      overlay.style.display = "none";
+    });
+  }
+
+  function mostrarMensajeReserva(clase) {
+    const overlay = document.getElementById("overlayElement");
+    overlay.style.display = "flex";
+
+    // Agregar clase reservada a "Tus Clases"
+    const listaClases = document.getElementById("listaClases");
+    const claseCard = document.createElement("div");
+    claseCard.classList.add("tu-clase-card");
+
+    claseCard.innerHTML = `
+      <div class="clase-info">
+        <h3>${clase.nombre}</h3>
+        <p>${clase.instructor}</p>
+      </div>
+      <div class="clase-details">
+        <span class="clase-date">${clase.fecha}</span>
+        <span class="clase-time">${clase.hora}</span>
+      </div>
+    `;
+    listaClases.appendChild(claseCard);
+  }
+
 });

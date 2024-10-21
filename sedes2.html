@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="sedes-sytle.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Imagenes/favicon.png" type="image/png">
+    <script src="sede-script.js"></script>
 </head>
 <body>
   <header>
@@ -24,74 +25,75 @@
 
         <a href="cuenta.html" class="boton-iniciar-sesion">Cuenta</a>
     </div>
-</header>
+  </header>
 
-    <section class="sede-principal-container" id="sede-principal">
-        <div class="sede-title-container">
-            <a href="javascript:history.back()"><img src="Vectores/arrow_forward_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="back-arrow" id="back-arrow"></a>
-            <div class="sede-title">Tu Sede</div>
-        </div>
-        <div class="sede-principal-card">
-            <div class="sede-image-overlay"><img src="Imagenes/imagen-incio.png" alt="sede100"></div>
-            <div class="sede-info">
-              <div class="sede-name">
-                <h2>Universidad Militar Calle 100</h2>
+  <section class="sede-principal-container" id="sede-principal">
+      <div class="sede-title-container">
+          <a href="javascript:history.back()"><img src="Vectores/arrow_forward_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="back-arrow" id="back-arrow"></a>
+          <div class="sede-title">Tu Sede</div>
+      </div>
+        
+      <div class="sede-principal-card">
+        <div class="sede-image-overlay"><img src="Imagenes/imagen-incio.png" alt="sede100"></div>
+        <div class="sede-info">
+          <div class="sede-name">
+              <h2>Universidad Militar Calle 100</h2>
                 <div class="sede-address">
                   <div class="sede-icon"></div>
                   <p>Carrera 11 # 101 - 80 Sótano</p>
                 </div>
-              </div>
-              <div class="sede-hours-card">
-                <div class="sede-hours-info">
-                  <div class="hours-time">
-                    <div class="hours-icon"></div>
-                    <div class="hours-rectangle"></div>
-                    <div class="hours-details">
-                      <p>6:00 a.m - 7:00 p.m</p>
-                      <div class="open-status">Abierto</div>
-                    </div>
-                  </div>
-                  <div class="view-hours">
-                    <p>Horarios</p>
-                    <div class="down-arrow"></div>
-                    <div class="frame">
-                      <div class="horario-card">
-                        <div class="horario-text">Universidad Militar Sede 100</div>
-                        <div class="estado abierto">Abierto</div>
-                      </div>
-                    
-                      <div class="horario-item">
-                        <div class="dia">Lunes a Jueves</div>
-                        <div class="horario">6:00 a.m - 7:00 p.m</div>
-                        <div class="icon"><img src="Vectores/icono-reloj-negro.svg" alt="icono-reloj-negro"></div>
-                      </div>
-                    
-                      <div class="horario-item">
-                        <div class="dia">Viernes</div>
-                        <div class="horario">7:00 a.m - 7:00 p.m</div>
-                        <div class="icon"><img src="Vectores/icono-reloj-negro.svg" alt="icono-reloj-negro"></div>
-                      </div>
-                    
-                      <div class="horario-item">
-                        <div class="dia">Sábados</div>
-                        <div class="horario">7:00 a.m - 2:00 p.m</div>
-                        <div class="icon"><img src="Vectores/icono-reloj-negro.svg" alt="icono-reloj-negro"></div>
-                      </div>
-                    
-                      <div class="horario-item">
-                        <div class="dia">Domingos y Festivos</div>
-                        <div class="estado cerrado">Cerrado</div>
-                        <div class="icon"><img src="Vectores/icono-reloj-negro.svg" alt="icono-reloj-negro"></div>
-                      </div>
-                    </div>
-                  </div>
+          </div>
+          <div class="sede-hours-card">
+            <div class="sede-hours-info">
+              <div class="hours-time">
+                <div class="hours-icon"></div>
+                <div class="hours-rectangle"></div>
+                <div class="hours-details">
+                  <p>6:00 a.m - 7:00 p.m</p>
+                  <div class="open-status">Abierto</div>
                 </div>
               </div>
+              <div class="view-hours" id="toggleButton">
+                <p>Horarios</p>
+                <div class="down-arrow" id="rotateArrow"></div>
+              </div>
             </div>
+          </div>
+          <div class="frame" id="hideFrame">
+                <div class="horario-card">
+                  <div class="horario-text">Universidad Militar Sede 100</div>
+                  <div class="estado abierto">Abierto</div>
+                </div>
+              
+                <div class="horario-item">
+                  <div class="dia">Lunes a Jueves</div>
+                  <div class="horario">6:00 a.m - 7:00 p.m</div>
+                  <div class="icon"><img src="Vectores/icono-reloj-negro.svg" alt="icono-reloj-negro"></div>
+                </div>
+              
+                <div class="horario-item">
+                  <div class="dia">Viernes</div>
+                  <div class="horario">7:00 a.m - 7:00 p.m</div>
+                  <div class="icon"><img src="Vectores/icono-reloj-negro.svg" alt="icono-reloj-negro"></div>
+                </div>
+              
+                <div class="horario-item">
+                  <div class="dia">Sábados</div>
+                  <div class="horario">7:00 a.m - 2:00 p.m</div>
+                  <div class="icon"><img src="Vectores/icono-reloj-negro.svg" alt="icono-reloj-negro"></div>
+                </div>
+              
+                <div class="horario-item">
+                  <div class="dia">Domingos y Festivos</div>
+                  <div class="estado cerrado">Cerrado</div>
+                  <div class="icon"><img src="Vectores/icono-reloj-negro.svg" alt="icono-reloj-negro"></div>
+                </div>
+          </div>
         </div>
-    </section>
+      </div>
+  </section>
 
-    <section class="otras-sedes-container" id="otras-sedes">
+  <section class="otras-sedes-container" id="otras-sedes">
         <div class="otras-sedes-titulo">
             <h2>Otras sedes</h2>
           </div>
@@ -107,10 +109,10 @@
                 <p>Universidad Militar Nueva Granada</p>
                 <span>Kilómetro 2, Vía Cajicá - Zipaquirá</span>
                 <div class="status abierto">Abierto</div>
-                <button class="btn-horario cajica" :hover>Horario</button>
-                <div class="frame-cajica">
+                <button class="btn-horario" class="toggleButtons" data-target="#hideFrame1">Horario</button>
+                <div class="frame" id="hideFrame1">
                   <div class="horario-card">
-                    <div class="horario-text">Universidad Militar Sede 100</div>
+                    <div class="horario-text">Universidad Militar Sede Cajicá</div>
                     <div class="estado abierto">Abierto</div>
                   </div>
                 
@@ -151,7 +153,37 @@
                 <p>Universidad de Cundinamarca</p>
                 <span>Autopista Chía - Cajicá</span>
                 <div class="status cerrado">Cerrado</div>
-                <button class="btn-horario">Horario</button>
+                <button class="btn-horario" class="toggleButtons" data-target="hideFrame2">Horario</button>
+                <div class="frame" id="hideFrame2">
+                  <div class="horario-card">
+                    <div class="horario-text">Universidad Militar Sede Cajicá</div>
+                    <div class="estado abierto">Abierto</div>
+                  </div>
+                
+                  <div class="horario-item">
+                    <div class="dia">Lunes a Jueves</div>
+                    <div class="horario">6:00 a.m - 7:00 p.m</div>
+                    <div class="icon"></div>
+                  </div>
+                
+                  <div class="horario-item">
+                    <div class="dia">Viernes</div>
+                    <div class="horario">7:00 a.m - 7:00 p.m</div>
+                    <div class="icon"></div>
+                  </div>
+                
+                  <div class="horario-item">
+                    <div class="dia">Sábados</div>
+                    <div class="horario">7:00 a.m - 2:00 p.m</div>
+                    <div class="icon"></div>
+                  </div>
+                
+                  <div class="horario-item">
+                    <div class="dia">Domingos y Festivos</div>
+                    <div class="estado cerrado">Cerrado</div>
+                    <div class="icon"></div>
+                  </div>
+                </div>
               </div>
             </div>
         
@@ -200,9 +232,9 @@
 
             
           </div>
-    </section>
+  </section>
 
-    <footer>
+  <footer>
         <div class="info-contacto">
           <div class="logo">
             <div class="vector-group"></div>
@@ -237,8 +269,6 @@
               </div>
             </div>
         </div>
-
-    </footer>
-    
+  </footer>
 </body>
 </html>
