@@ -13,13 +13,6 @@ html {
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    display: flex;
-  flex-direction: column;
-}
-
-a{
-    text-decoration: none;
-    color: none;
 }
 
 /* Contenedor general */
@@ -274,7 +267,7 @@ header {
     border: none;
     outline: none;
     width: 100%;
-    text-align: center;
+
 }
 
 /* Efecto hover para el botón "Iniciar Sesión" */
@@ -755,7 +748,6 @@ header {
     max-width: 1200px;
     margin: 0 auto; 
     padding: 0 20px;
-    gap: 20px;
 }
 
 .contenedor-izquierda {
