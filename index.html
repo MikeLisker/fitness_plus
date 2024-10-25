@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Plus 🏋️‍♂️ - El único gimnasio donde tienes coach personalizado 1 a 1</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,90 +63,70 @@
     </section>
 
     <section>
-        <div class="titulos-secciones" id="planes">
+        <div class="titulos-secciones">
             <h2 class="titulos-principales">Elige tu plan y entrena ya</h2>
-            <p class="sub-texto ">Encuentra el plan perfecto para tus objetivos y comienza tu transformación hoy mismo.<p/>
+            <p class="sub-texto">Encuentra el plan perfecto para tus objetivos y comienza tu transformación hoy mismo.</p>
         </div>
-
+    
         <div class="toggle-wrapper">
             <div class="toggle-container">
-              <button class="toggle-option active">Mensual</button>
-              <button class="toggle-option">Anual</button>
+                <button id="mensualBtn" class="toggle-option active">Mensual</button>
+                <button id="anualBtn" class="toggle-option">Anual</button>
             </div>
         </div>
-        
+    
         <div class="card-container">
-            <div class="plan-card">
+            <!-- Oro Plan -->
+            <div class="plan-card" id="oro">
                 <p class="subtitulos">Oro</p>
                 <div class="precio-contenedor">
-                    <span class="precios">$120.000</span>
+                    <span class="precios"></span>
                     <span class="texto-planes">/mes</span>
                 </div>
-                <p class="textos2">Facturado Mensualmente</p>
+                <p class="textos2">Facturado <span class="facturacion-tipo">Mensualmente</span></p>
                 <hr class="divisora">
                 <div class="beneficios">
-                    <ul>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Acceso ilimitado a 2 sedes</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Entrena con 2 amigos al mes</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Reserva hasta 2 clases a la semana</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Plan de entrenamiento básico</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">10 preguntas personalizadas al coach</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Fitness Plus App | Rutinas</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Acceso a todas las áreas de la sede</li>
-                    </ul>
-                </div>    
-                <button class="boton-cta2"><a href="Login.html">Iniciar Sesión</a></button>
+                    <ul></ul>
+                </div>
+                <button class="boton-cta2">Iniciar Sesión</button>
             </div>
-
-            
+    
+            <!-- Diamante Plan Recomendado -->
             <div class="recomendado-wrapper">
                 <p class="recomendado">Recomendado</p>
-                <div class="plan-card-recomendado">
+                <div class="plan-card-recomendado" id="diamante">
                     <p class="subtitulos">Diamante</p>
                     <div class="precio-contenedor">
-                        <span class="precios">$170.000</span>
+                        <span class="precios"></span>
                         <span class="texto-planes">/mes</span>
                     </div>
-                    <p class="textos2">Facturado Mensualmente</p>
+                    <p class="textos2">Facturado <span class="facturacion-tipo">Mensualmente</span></p>
                     <hr class="divisora">
                     <div class="beneficios">
-                        <ul>
-                            <li><img src="Vectores/check.svg" alt="check" loading="lazy">Acceso ilimitado a 4 sedes</li>
-                            <li><img src="Vectores/check.svg" alt="check" loading="lazy">Entrena con 4 amigos al mes</li>
-                            <li><img src="Vectores/check.svg" alt="check" loading="lazy">Reserva hasta 4 clases a la semana</li>
-                            <li><img src="Vectores/check.svg" alt="check" loading="lazy">Plan de entrenamiento avanzado</li>
-                            <li><img src="Vectores/check.svg" alt="check" loading="lazy">15 preguntas personalizadas al coach</li>
-                            <li><img src="Vectores/check.svg" alt="check" loading="lazy">Fitness Plus App | Rutinas</li>
-                            <li><img src="Vectores/check.svg" alt="check" loading="lazy">Acceso a todas las áreas de la sede</li>
-                        </ul>
-                    </div>    
+                        <ul></ul>
+                    </div>
                     <button class="boton-cta2"><a href="Login.html">Iniciar Sesión</a></button>
-                </div>    
+                </div>
             </div>
-
-            <div class="plan-card">
+    
+            <!-- Platino Plan -->
+            <div class="plan-card" id="platino">
                 <p class="subtitulos">Platino</p>
                 <div class="precio-contenedor">
-                    <span class="precios">$250.000</span>
+                    <span class="precios"></span>
                     <span class="texto-planes">/mes</span>
                 </div>
-                <p class="textos2">Facturado Mensualmente</p>
+                <p class="textos2">Facturado <span class="facturacion-tipo">Mensualmente</span></p>
                 <hr class="divisora">
                 <div class="beneficios">
-                    <ul>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Acceso ilimitado a todas las sedes</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Entrena con 10 amigos al mes</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Reserva hasta 10 clases a la semana</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Plan de entrenamiento completo</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Preguntas ilimitadas al coach</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Fitness Plus App | Rutinas</li>
-                        <li><img src="Vectores/check.svg" alt="check" loading="lazy">Acceso a todas las áreas de la sede</li>
-                    </ul>
-                </div>    
-                <button class="boton-cta2"><a href="Login.html">Iniciar Sesión</a></button>
+                    <ul></ul>
+                </div>
+                <button class="boton-cta2">Iniciar Sesión</button>
             </div>
         </div>
     </section>
+
+
 
     <section>
         <div class="titulos-secciones2" id="sedes">
