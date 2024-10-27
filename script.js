@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   showSection.addEventListener('click', () => {  
     sectionHide.style.display = "flex";
-    });
+  });
   
   // Añadir eventos a los botones de reserva
   reserveButtons.forEach(button => {
@@ -46,75 +46,90 @@ document.addEventListener('DOMContentLoaded', () => {
     sectionHide.style.display = "none";
   });
 
-  // Cargar JSON y agregar clases dinámicamente
-  document.addEventListener("DOMContentLoaded", () => {
-    fetch("clases.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const clases = data.clases;
-        mostrarClases(clases);
-        gestionarReservas(clases);
-      })
-      .catch((error) => console.error("Error al cargar JSON:", error));
+  const fechaCards = document.querySelectorAll('.fecha-card');
+  const clasesDisponibles = document.querySelector('.clases-disponibles');
+
+    // Clases disponibles por día (simulación)
+    const clasesPorDia = {
+        '2': [
+            { hora: '7:00 a.m', nombre: 'Cycling', entrenador: 'Néstor Alfaro' },
+            { hora: '9:00 a.m', nombre: 'Boxeo', entrenador: 'Diana Cadavid' },
+            { hora: '11:00 a.m', nombre: 'Funcional', entrenador: 'Pibe González' }
+        ],
+        '3': [
+            { hora: '7:00 a.m', nombre: 'Boxeo', entrenador: 'Diana Cadavid' },
+            { hora: '9:00 a.m', nombre: 'Cycling', entrenador: 'Néstor Alfaro ' },
+            { hora: '11:00 a.m', nombre: 'Funcional', entrenador: 'Pibe González' }
+        ],
+        '4': [
+            { hora: '7:00 a.m', nombre: 'Boxeo', entrenador: 'Diana Cadavid' },
+            { hora: '9:00 a.m', nombre: 'Funcional', entrenador: 'Pibe González' },
+            { hora: '11:00 a.m', nombre: 'Cycling', entrenador: 'Néstor Alfaro ' }
+        ],
+        '5': [
+            { hora: '7:00 a.m', nombre: 'Funcional', entrenador: 'Pibe González' },
+            { hora: '9:00 a.m', nombre: 'Cycling', entrenador: 'Néstor Alfaro ' },
+            { hora: '11:00 a.m', nombre: 'Boxeo', entrenador: 'Diana Cadavid  ' }
+        ],
+        '6': [
+            { hora: '7:00 a.m', nombre: 'Yoga', entrenador: 'Carla Pérez' },
+            { hora: '9:00 a.m', nombre: 'Cycling', entrenador: 'Néstor Alfaro ' },
+            { hora: '11:00 a.m', nombre: 'Funcional', entrenador: 'Pibe González' }
+        ],
+        '7': [
+            { hora: '8:00 a.m', nombre: 'Cycling', entrenador: 'Néstor Alfaro ' },
+            { hora: '10:00 a.m', nombre: 'Spinning', entrenador: 'Juan Mendoza' }
+        ],
+        '8': []
+    };
+
+    // Función para actualizar las clases disponibles según el día seleccionado
+    function actualizarClasesDisponibles(dia) {
+      // Limpiar las clases disponibles actuales
+      clasesDisponibles.innerHTML = '';
+
+      // Obtener las clases para el día seleccionado
+      const clases = clasesPorDia[dia] || [];
+
+      // Mostrar las clases disponibles en la sección
+      if (clases.length > 0) {
+          clases.forEach(clase => {
+              const claseCard = document.createElement('div');
+              claseCard.classList.add('clase-card');
+
+              claseCard.innerHTML = `
+                  <div class="clase-hora">${clase.hora}</div>
+                  <div class="clase-info">
+                      <h3>${clase.nombre}</h3>
+                      <p>${clase.entrenador}</p>
+                  </div>
+                  <div class="boton-reservar">
+                      <button class="showOverlay">Reservar clase</button>
+                  </div>
+              `;
+
+              clasesDisponibles.appendChild(claseCard);
+          });
+      } else {
+          clasesDisponibles.innerHTML = '<p>No hay clases disponibles para este día.</p>';
+      }
+  }
+
+  // Asignar evento click a cada tarjeta de fecha
+  fechaCards.forEach(card => {
+      card.addEventListener('click', () => {
+          // Remover la clase activa de todas las tarjetas
+          fechaCards.forEach(card => card.classList.remove('active'));
+
+          // Agregar la clase activa a la tarjeta seleccionada
+          card.classList.add('active');
+
+          // Actualizar las clases disponibles según el día seleccionado
+          const diaSeleccionado = card.querySelector('.dia-numero').textContent;
+          actualizarClasesDisponibles(diaSeleccionado);
+      });
   });
 
-  function mostrarClases(clases) {
-    const listaClases = document.getElementById("listaClases");
-
-    clases.forEach((clase) => {
-      const claseCard = document.createElement("div");
-      claseCard.classList.add("tu-clase-card");
-
-      claseCard.innerHTML = `
-        <div class="clase-info">
-          <h3>${clase.nombre}</h3>
-          <p>${clase.instructor}</p>
-        </div>
-        <div class="clase-details">
-          <span class="clase-date">${clase.fecha}</span>
-          <span class="clase-time">${clase.hora}</span>
-        </div>
-      `;
-      listaClases.appendChild(claseCard);
-    });
-  }
-
-  function gestionarReservas(clases) {
-    const botonesReservar = document.querySelectorAll(".showOverlay");
-    const overlay = document.getElementById("overlayElement");
-    const closeOverlay = document.getElementById("closeOverlay");
-
-    botonesReservar.forEach((boton, index) => {
-      boton.addEventListener("click", () => {
-        mostrarMensajeReserva(clases[index]);
-      });
-    });
-
-    closeOverlay.addEventListener("click", () => {
-      overlay.style.display = "none";
-    });
-  }
-
-  function mostrarMensajeReserva(clase) {
-    const overlay = document.getElementById("overlayElement");
-    overlay.style.display = "flex";
-
-    // Agregar clase reservada a "Tus Clases"
-    const listaClases = document.getElementById("listaClases");
-    const claseCard = document.createElement("div");
-    claseCard.classList.add("tu-clase-card");
-
-    claseCard.innerHTML = `
-      <div class="clase-info">
-        <h3>${clase.nombre}</h3>
-        <p>${clase.instructor}</p>
-      </div>
-      <div class="clase-details">
-        <span class="clase-date">${clase.fecha}</span>
-        <span class="clase-time">${clase.hora}</span>
-      </div>
-    `;
-    listaClases.appendChild(claseCard);
-  }
-
+  // Inicializar con las clases del día seleccionado por defecto (Lunes)
+  actualizarClasesDisponibles('2');
 });
