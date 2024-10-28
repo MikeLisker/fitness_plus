@@ -17,38 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 
-  // 3. Mostrar mensaje sobrepuesto al hacer clic en un botón y ocultarlo después de 3 segundos
-  // Seleccionar todos los botones de reserva
-  const reserveButtons = document.querySelectorAll('.showOverlay');
-  // Seleccionar todos los mensajes sobrepuestos
-  const overlayMessages = document.getElementById('overlayElement');
-  // Seleccionar los botones de cerrar
-  const closeButtons = document.getElementById('closeOverlay');
-
-  const sectionHide = document.getElementById('section-hide');
-
-  const showSection = document.getElementById('show-section');
-
   
-  showSection.addEventListener('click', () => {  
-    sectionHide.style.display = "flex";
-  });
-  
-  // Añadir eventos a los botones de reserva
-  reserveButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      overlayMessages.style.display = "flex"; // Mostrar mensaje
-    });
-  });
 
-  closeButtons.addEventListener('click', () => {
-    overlayMessages.style.display = 'none';
-    sectionHide.style.display = "none";
-  });
-
-  const fechaCards = document.querySelectorAll('.fecha-card');
-  const clasesDisponibles = document.querySelector('.clases-disponibles');
-
+ 
     // Clases disponibles por día (simulación)
     const clasesPorDia = {
         '2': [
@@ -83,53 +54,91 @@ document.addEventListener('DOMContentLoaded', () => {
         '8': []
     };
 
-    // Función para actualizar las clases disponibles según el día seleccionado
-    function actualizarClasesDisponibles(dia) {
-      // Limpiar las clases disponibles actuales
-      clasesDisponibles.innerHTML = '';
+    const fechaCards = document.querySelectorAll('.fecha-card');
+    const clasesDisponibles = document.querySelector('.clases-disponibles');
+    const reserveButtons = document.querySelectorAll('.showOverlay');
+  // Seleccionar todos los mensajes sobrepuestos
+  const overlayMessages = document.getElementById('overlayElement');
+  // Seleccionar los botones de cerrar
+  const closeButtons = document.getElementById('closeOverlay');
 
-      // Obtener las clases para el día seleccionado
-      const clases = clasesPorDia[dia] || [];
+  const sectionHide = document.getElementById('section-hide');
 
-      // Mostrar las clases disponibles en la sección
-      if (clases.length > 0) {
-          clases.forEach(clase => {
-              const claseCard = document.createElement('div');
-              claseCard.classList.add('clase-card');
+  const showSection = document.getElementById('show-section');
+  
 
-              claseCard.innerHTML = `
-                  <div class="clase-hora">${clase.hora}</div>
-                  <div class="clase-info">
-                      <h3>${clase.nombre}</h3>
-                      <p>${clase.entrenador}</p>
-                  </div>
-                  <div class="boton-reservar">
-                      <button class="showOverlay">Reservar clase</button>
-                  </div>
-              `;
-
-              clasesDisponibles.appendChild(claseCard);
-          });
-      } else {
-          clasesDisponibles.innerHTML = '<p>No hay clases disponibles para este día.</p>';
-      }
-  }
-
-  // Asignar evento click a cada tarjeta de fecha
-  fechaCards.forEach(card => {
-      card.addEventListener('click', () => {
-          // Remover la clase activa de todas las tarjetas
-          fechaCards.forEach(card => card.classList.remove('active'));
-
-          // Agregar la clase activa a la tarjeta seleccionada
-          card.classList.add('active');
-
-          // Actualizar las clases disponibles según el día seleccionado
-          const diaSeleccionado = card.querySelector('.dia-numero').textContent;
-          actualizarClasesDisponibles(diaSeleccionado);
+  function actualizarClasesDisponibles(dia) {
+    clasesDisponibles.innerHTML = ''; // Limpiar las clases actuales
+  
+    const clases = clasesPorDia[dia] || [];
+  
+    if (clases.length > 0) {
+      clases.forEach(clase => {
+        const claseCard = document.createElement('div');
+        claseCard.classList.add('clase-card');
+  
+        claseCard.innerHTML = `
+          <div class="clase-hora">${clase.hora}</div>
+          <div class="clase-info">
+            <h3>${clase.nombre}</h3>
+            <p>${clase.entrenador}</p>
+          </div>
+          <div class="boton-reservar">
+            <button class="showOverlay">Reservar clase</button>
+          </div>
+        `;
+  
+        clasesDisponibles.appendChild(claseCard);
       });
+  
+      // Reasignar eventos de los botones de reserva
+      asignarEventosReservar();
+    } else {
+      clasesDisponibles.innerHTML = '<p>No hay clases disponibles para este día.</p>';
+    }
+  }
+  
+  // Función para asignar eventos de reserva dinámicamente
+  function asignarEventosReservar() {
+    const reservarBotones = document.querySelectorAll('.showOverlay');
+    reservarBotones.forEach(button => {
+      button.addEventListener('click', () => {
+        overlayMessages.style.display = 'flex'; // Mostrar mensaje
+      });
+    });
+  }
+  
+  // Evento para cerrar el overlay
+  closeButtons.addEventListener('click', () => {
+    overlayMessages.style.display = 'none'; // Ocultar mensaje
+    sectionHide.style.display = 'none'; // Ocultar sección de reservas si es necesario
   });
-
-  // Inicializar con las clases del día seleccionado por defecto (Lunes)
+  
+  // Mostrar sección de reservas al hacer clic en el botón
+  showSection.addEventListener('click', () => {
+    sectionHide.style.display = 'flex';
+  });
+  
+  // Asignar eventos a los botones de fecha
+  fechaCards.forEach(card => {
+    card.addEventListener('click', () => {
+      fechaCards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+  
+      const diaSeleccionado = card.querySelector('.dia-numero').textContent;
+      actualizarClasesDisponibles(diaSeleccionado);
+    });
+  });
+  
+  // Inicializar con las clases del día 2
   actualizarClasesDisponibles('2');
+
+// 3. Mostrar mensaje sobrepuesto al hacer clic en un botón y ocultarlo después de 3 segundos
+  // Seleccionar todos los botones de reserva
+  
+
+  
+  
+
+
 });
